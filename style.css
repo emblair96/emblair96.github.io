@@ -1,0 +1,13 @@
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 300px;
+    width: 100%;
+}
+
+h2 {
+
+}
