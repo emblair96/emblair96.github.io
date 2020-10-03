@@ -1,13 +1,52 @@
+* {
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f2f2f2;
+}
+
 header {
+    background-color: #9b709b;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-end;
+    color: white;
+}
+
+.nav-bar {
+    display: flex;
+    font-size: 18px;
+}
+
+.nav-options {
+    padding: 10px 10px;
 }
 
 h1 {
-    font-size: 300px;
-    width: 100%;
+    padding: 60px;
+    font-size: 50px;
+    text-align: center;
 }
 
 h2 {
-
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
 }
+
+.featured-projects {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project {
+    border: dotted;
+    height: 500px;
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+}
+
+
+
+
