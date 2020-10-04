@@ -1,52 +1,25 @@
-* {
-}
+/* Nav bar */
 
-body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #f2f2f2;
-}
-
-header {
-    background-color: #9b709b;
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-}
-
-.nav-bar {
-    display: flex;
-    font-size: 18px;
-}
-
-.nav-options {
-    padding: 10px 10px;
-}
-
-h1 {
-    padding: 60px;
-    font-size: 50px;
+.btn-circle {
     text-align: center;
+    padding: 0;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    line-height: 75px;
+    font-size: 1.1rem;
+  }
+
+/* Header background */
+
+.light-purple-background {
+    background: #E3E1EA;
 }
 
-h2 {
-    padding: 30px;
-    font-size: 20px;
-    text-align: center;
-}
+/* Media queries  */
 
-.featured-projects {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.project {
-    border: dotted;
-    height: 500px;
-    width: 400px;
-    margin: 10px;
-    text-align: center;
-}
-
-
-
-
+@media screen and (min-width: 480px) {
+    nav {
+  
+        }
+  }
