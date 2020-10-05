@@ -18,8 +18,18 @@
 
 /* Media queries  */
 
-@media screen and (min-width: 480px) {
-    nav {
-  
+@media screen and (min-width: 481px) {
+    .hamburger{
+        display: none;
+    } 
+}
+
+@media screen and (max-width: 480px) {
+        .navbar a:not(:first-child) {display: none;}
+        .topnav a.icon {
+        float: right;
+        display: block;
+            }
         }
-  }
+
+  
