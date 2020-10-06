@@ -1,35 +1,30 @@
-/* Nav bar */
+/* Nav bar customization */
 
-.btn-circle {
+/* .btn-circle {
     text-align: center;
     padding: 0;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    line-height: 75px;
-    font-size: 1.1rem;
-  }
+    border-radius: 60%;
+    width: 65px;
+    height: 65px;
+    line-height: 60px;
+    font-size: 0.9rem;
+  } */
 
 /* Header background */
 
-.light-purple-background {
+.top-banner {
     background: #E3E1EA;
 }
 
-/* Media queries  */
-
-@media screen and (min-width: 481px) {
-    .hamburger{
-        display: none;
-    } 
+.about {
+    background: #E3E1EA;
 }
 
-@media screen and (max-width: 480px) {
-        .navbar a:not(:first-child) {display: none;}
-        .topnav a.icon {
-        float: right;
-        display: block;
-            }
-        }
+.skills {
+    background: #E3E1EA;
+}
 
-  
+.portfolio {
+    background: #fec9ac;
+    
+}
