@@ -1,3 +1,8 @@
+body {
+    background: #E3E1EA;
+}
+
+
 /* Nav bar customization */
 
 /* .btn-circle {
@@ -11,20 +16,3 @@
   } */
 
 /* Header background */
-
-.top-banner {
-    background: #E3E1EA;
-}
-
-.about {
-    background: #E3E1EA;
-}
-
-.skills {
-    background: #E3E1EA;
-}
-
-.portfolio {
-    background: #fec9ac;
-    
-}
