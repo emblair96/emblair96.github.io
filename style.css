@@ -2,6 +2,13 @@ body {
     background: #E3E1EA;
 }
 
+@media (max-width: 992px) { 
+  .emilyPhoto {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 /* Nav bar customization */
 
@@ -14,5 +21,3 @@ body {
     line-height: 60px;
     font-size: 0.9rem;
   } */
-
-/* Header background */
