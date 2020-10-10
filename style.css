@@ -4,13 +4,13 @@ body {
 
 @media (max-width: 992px) { 
   .emilyPhoto {
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: center;
   }
 }
 
-/* Nav bar customization */
+/* Nav bar customization - to be added in later */
 
 /* .btn-circle {
     text-align: center;
