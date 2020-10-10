@@ -1,6 +1,10 @@
+/* Background color */
+
 body {
     background: #E3E1EA;
 }
+
+/* Media query to resize photo of myself on home/index page on smaller devices */
 
 @media (max-width: 992px) { 
   .emilyPhoto {
@@ -8,6 +12,12 @@ body {
     display: flex;
     justify-content: center;
   }
+}
+
+/* Footer margin to deal with issue of fixed footer covering up content on smaller devices - only needed on contact page */
+
+.footer-margin {
+  height: 200px;
 }
 
 /* Nav bar customization - to be added in later */
