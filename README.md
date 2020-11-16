@@ -22,4 +22,4 @@ In addition, below are two sites I would like to credit for graphics, as well as
 
 * I used [Icon Finder](https://www.iconfinder.com/social-media-icons) for the social media icons located in my footer.
 
-* [This html validator](https://www.freeformatter.com/html-validator.html) was useful in verifying my code was valid and following best practices.
+* [This html validator](https://www.freeformatter.com/html-validator.html) is useful in verifying my code is valid and follows best practices.
