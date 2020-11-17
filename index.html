@@ -10,7 +10,7 @@
 </head>
 <body>
 <!-- Navbar -->
-  <header>
+  <header id="home" class="position-sticky mb-5">
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background:#e9ecef">
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -18,13 +18,13 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link btn btn-outline-dark m-2" href="index.html">Home</a>
+          <a class="nav-link btn btn-outline-dark m-2" href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link btn btn-outline-dark m-2" href="portfolio.html">Portfolio</a>
+          <a class="nav-link btn btn-outline-dark m-2" href="#portfolio">Portfolio</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link btn btn-outline-dark m-2" href="contact.html">Contact</a>
+            <a class="nav-link btn btn-outline-dark m-2" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
@@ -32,16 +32,14 @@
   </header>
 
 <!-- 'Hi I'm Emily' welcome banner  -->
-  <section class="container">  
+  <section class="container pt-5">  
       <div class="jumbotron jumbotron-fluid rounded m-3" id="welcome-msg">
         <div class="container">
           <h1 class="display-3">Hi, I'm Emily.</h1>
-          <p class="lead">An aspiring software developer.</p>
+          <p class="lead intro-subtitle text-left">An aspiring software developer.</p>
         </div>
       </div> 
   </section>
-  
-  <div class="parallax"></div>
 
 <!-- Photo and my approach to web development -->
   <section class="container pb-3">
@@ -50,7 +48,7 @@
           <img src="Assets/emily-photo-2.jpeg" class="img-fluid border rounded" alt="Photo of Emily Blair">
       </div>
       <div class="col-lg-8 mt-3">
-        <h2 class="font-weight-light">My approach</h2>
+        <h2 class="font-weight-light d-flex">My approach</h2>
           <ul class="list-unstyled">
               <li class="media p-4 my-approach">
                 <img src="Assets/git-branch.svg" class="mt-2 mr-3" alt="GitHub branch graphic">
@@ -96,44 +94,50 @@
   </section>
 
 <!-- Project highlights -->
-  <section class="container p-3">   
+  <section id="portfolio" class="container p-3">   
     <h1 class="pb-3 font-weight-light text-center">My work</h1>  
-    <div class="row row-cols-1 row-cols-lg-3">
-        <div class="col mb-4">
-        <div class="card border-info" target="_blank" src="https://emblair96.github.io/eats-and-beats-app/">
-            <img src="Assets/eats-and-beats-logo.png" class="card-img-top p-5" alt="Eats and Beats logo with music note">
-            <div class="card-body front">
-            <h5 class="card-title">Eats and Beats</h5>
-            <p class="card-text">Where food meets music.  Developed in a group project, this app generates a recipe and playlist based on user input to create an immersive experience that engages all senses, without leaving the confines of your kitchen.</p>
-            <p class="project-links"><a target="_blank" href="https://emblair96.github.io/eats-and-beats-app/">Live Site</a> || <a target="_blank" href="https://github.com/emblair96/eats-and-beats-app">GitHub Repository</a></p>
+    <div class="row">
+      <div class="col-lg mb-4">
+        <a target="_blank" href="https://github.com/emblair96/eats-and-beats-app">
+          <div class="card shadow-lg">
+              <img src="Assets/eats-and-beats-logo.png" class="card-img-top p-5" alt="Eats and Beats logo with music note">
+              <div class="card-body front">
+              <h5 class="card-title">Eats and Beats</h5>
+              <p class="card-text">Where food meets music.  Developed in a group project, this app generates a recipe and playlist based on user input to create an immersive experience, that engages all senses, without leaving the confines of your kitchen.</p>
+              <p class="project-links"><a target="_blank" href="https://emblair96.github.io/eats-and-beats-app/">Live Site</a> || <a target="_blank" href="https://github.com/emblair96/eats-and-beats-app">GitHub Repository</a></p>
+              </div>
+        </a>
+      </div>
+    </div>  
+    <div class="col-lg mb-4">
+      <a target="_blank" href="https://github.com/emblair96/HW6-weather-app">
+        <div class="card shadow-lg">
+            <img src="Assets/weather-app.png" class="card-img-top p-3" alt="Chicago weather dashboard with current and 5-day weather">
+            <div class="card-body">
+              <h5 class="card-title">Weather Quick Look</h5>
+              <p class="card-text">This app utilizes the OWM API to display weather data based on the user's search.  Local storage is used to create a search history and reload the uesr's last searched for city when they re-visit the site.</p>
+            </div>   
+        </div>
+      </a>
+    </div>
+    <div class="col mb-4">
+      <a target="_blank" href="">
+        <div class="card shadow-lg">
+            <img src="Assets/calendar-app.png" class="card-img-top p-3" alt="single-day calendar view with hourly timeslots">
+            <div class="card-body">
+            <h5 class="card-title">Work Day Scheduler</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
             </div>
         </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card border-info">
-              <img src="Assets/weather-app.png" class="card-img-top p-3" alt="Chicago weather dashboard with current and 5-day weather">
-              <div class="card-body">
-              <h5 class="card-title">Weather Quick Look</h5>
-              <p class="card-text">This is a short card.</p>
-              </div>
-          </div>
-        </div>
-        <div class="col mb-4">
-          <div class="card border-info">
-              <img src="Assets/calendar-app.png" class="card-img-top p-3" alt=" single-day view with hourly timeslots">
-              <div class="card-body">
-              <h5 class="card-title">Work Day Scheduler</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-              </div>
-          </div>
-        </div>
+      </a>
+    </div>
     </div>
   </section>
 
 <!-- Contact form -->
-  <section class="container col-lg-6 pt-5 pb-5">
+  <section id="contact" class="container col-lg-6 pt-5 pb-5">
     <div class="col-lg-6"></div>
-    <h2 class="pb-3 font-weight-light text-center">Want to learn more about my work? Let's connect.</h2>
+    <h2 class="pb-3 font-weight-light text-center">I'd love to share more about what I do.</h2>
     <form>
         <div class="form-row pb-3">
           <div class="col-md">
@@ -155,17 +159,19 @@
 
 <!-- Footer -->
   <footer class="pt-5">
-    <div class="row bg-light d-flex justify-content-center footer">
-      <div class="m-4 text-secondary">
-        <p class="text-center">Coding, creating, and collaborating since June 2020.</p>
+    <div class="row d-flex justify-content-center footer">
+      <div class="mt-4 text-secondary">
+        <div class="text-center">Cell: 636.288.8821</div>
+        <div class="text-center"><a class="text-secondary" href="mailto:emilyblair96@gmail.com">Email: emilyblair96@gmail.com</a></div>
         <div class="d-flex justify-content-center">
           <a href="https://github.com/emblair96" target="_blank">
-          <img src="Assets/github-icon-2.png" alt="github social media icon" class="m-1">
+          <img src="Assets/github-icon.png" alt="github social media icon" class="m-1">
           </a>
           <a href="https://www.linkedin.com/in/emilyblair96/" target="_blank">
-          <img src="Assets/linkedin-icon-2.png" alt="linkedin social media icon" class="m-1">
+          <img src="Assets/linkedin-icon.png" alt="linkedin social media icon" class="m-1">
           </a>
         </div>
+        <p class="text-center mb-0 mt-4">Emily Blair <span style="color:#862a5c">&#169</span> 2020</p>
       </div> 
     </div>
   </footer>

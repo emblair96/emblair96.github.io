@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* Background color */
 body {
     background: #f6f6f6;
@@ -8,44 +12,90 @@ body {
   background: darkgrey !important;
 }
 
+.btn {
+  color: #f6f6f6 !important;
+}
+
 /* Box shadow effect on 'Hi, I'm Emily' jumbotron */
-#welcome-msg{
+#welcome-msg {
   background-color: #7ebdb4; 
   box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
               0 2px 2px rgba(0,0,0,0.12), 
               0 4px 4px rgba(0,0,0,0.12), 
               0 8px 8px rgba(0,0,0,0.12),
               0 16px 16px rgba(0,0,0,0.12);
+ 
 }
 
-/* Hover effect on my approach elements */
-.my-approach:hover{
-  cursor: pointer;
-  background-color: #f4a548;
-  opacity: 100%;
-  transform: scale(1.1);
-  transition: 0.7s;
-  border-radius: 10px;
-  height: 110%;
+/* Working on typewriter effect for jumbotron header */
+.intro-subtitle {
+  display: inline-flex;
+  overflow: hidden; 
+  /*border-right: .15em solid black;*/
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: 
+  typing 5s steps(60, end),
+  blink-caret .75s step-end infinite;
 }
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect just keeps going, can't figure out why? */
+/*
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: black; } 
+}
+
+*/
+
+/* Hover effect on projects, only on devices with pointer */
+@media(hover: hover) and
+(pointer: fine) {
+  .card:hover{
+    cursor: pointer;
+    /* background-color: #f4a548; */
+    opacity: 100%;
+    transform: scale(1.1);
+    transition: 0.7s;
+    border-radius: 10px;
+    height: 110%;
+  }
+}
+
+a {
+  color: black;
+}
+
+a:hover, a:focus {
+  color: black;
+  text-decoration: none;
+}
+
 
 /* Background color for text portion of the card body with my projects */
-.card-body{
+.card-body {
   background: #7ebdb4 !important;
 }
 
 /* Changing color of progress bar */
-.progress-bar{
+.progress-bar {
   background: #f4a548 !important;
 }
 
 /* Change font size of links found on the cards w/ project info */
-.project-links{
+.project-links {
   font-size: .9rem;
 }
 
+
 /* Footer margin to deal with issue of fixed footer covering up content on smaller devices - only needed on contact page */
-.footer-margin {
+.footer-margin{
   height: 50%;
 }
 
@@ -54,6 +104,10 @@ body {
   .emilyPhoto {
     width: 80%;
     display: flex;
+    justify-content: center;
+  }
+
+  h2 {
     justify-content: center;
   }
 }
