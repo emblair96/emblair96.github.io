@@ -8,7 +8,8 @@
 * JavaScript
 * jQuery
 * [Bootstrap](https://getbootstrap.com/)
-* [Html validator](https://www.freeformatter.com/html-validator.html)
+* [Free Formatter, HTML validator](https://www.freeformatter.com/html-validator.html)
+* [Font Awesome](https://fontawesome.com/)
 
 ### What you'll find on my portfolio
 
@@ -27,10 +28,8 @@
 ### Credits
 * [Justin Aguilar's animation resource.](http://www.justinaguilar.com/animations/#)
 
-* [Manuel Pinto's Gradient CSS Codepen](https://codepen.io/P1N2O/pen/pyBNzX)
+* [CSS Gradient Animator](https://www.gradient-animator.com/)
 
 * The graphic elements in my about section are from [Github's primer style](https://primer.style/octicons/).  
-
-* I used [Icon Finder](https://www.iconfinder.com/social-media-icons) for the social media icons located in my footer.
 
 ### License
