@@ -25,7 +25,9 @@
 * [GitHub Repository](https://github.com/emblair96/emblair96.github.io)
 
 ### Credits
-* 
+* [Justin Aguilar's animation resource.](http://www.justinaguilar.com/animations/#)
+
+* [Manuel Pinto's Gradient CSS Codepen](https://codepen.io/P1N2O/pen/pyBNzX)
 
 * The graphic elements in my about section are from [Github's primer style](https://primer.style/octicons/).  
 
