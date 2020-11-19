@@ -4,14 +4,27 @@ var introSubtitle = document.querySelector(".intro-subtitle")
 var dataText = "An aspiring software developer."
 
 function typeWriter() {
-    for (var i=0; i<dataText.length; i++) {
-        if (i<dataText.length) {
-            introSubtitle.textContent += dataText[i]
-    }
+        var dataTextArray = dataText.split("");
+        dataTextArray.forEach(setTimeout(function(letter) {
+           introSubtitle.textContent += letter
+        }), 2000) 
 
-}
+    
 
-}
+};
 
 //typeWriter();
 
+
+
+
+$(window).scroll(function() {
+    $('.progress').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+800) {
+            $(this).addClass("stretchRight");
+        }
+    });
+});
