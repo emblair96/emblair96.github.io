@@ -1,7 +1,9 @@
+/* Makes smooth scrolling experience when click on menu item */
 html {
   scroll-behavior: smooth;
 }
 
+/* Make navbar maintain when scrolling */
 header {
   position: sticky;
   top: 0;
@@ -19,11 +21,12 @@ body {
   background: darkgrey !important;
 }
 
-
+/* Making text lighter on buttons */
 .btn {
   color: #f6f6f6 !important;
 }
 
+/* Jumbotron gradient animated effect */
 #welcome-msg {
   height: 40vh;
   background: linear-gradient(135deg, #862a5c, #f4a548, #7ebdb4, #f6d198);
@@ -32,10 +35,6 @@ body {
   -webkit-animation: gradient 21s ease infinite;
   -moz-animation: gradient 21s ease infinite;
   animation: gradient 21s ease infinite;
-}
-
-#welcome-msg-text {
-  align-items: center;
 }
 
 @-webkit-keyframes gradient {
@@ -54,15 +53,17 @@ body {
   100%{background-position:27% 0%}
 }
 
+/* Resizing approach icons */
 .approach-icon {
   height: 2em;
 }
 
+/* Prevents animation from happening until user scrolls to element */
 #animatedElement {
 	visibility: hidden;
 }
 
-
+/* Hover effect transition time */
 .card {
   transition: 0.7s; 
 }
@@ -74,15 +75,16 @@ body {
     cursor: pointer;
     opacity: 100%;
     transform: scale(1.1);
-    border-radius: 10px;
-    height: 110%;
+    border-radius: 2%;
   }
 }
 
+/* Make text black instead of Bootstrap default blue when making cards links */
 a {
   color: black;
 }
 
+/* Make text black instead of Bootstrap default blue when making cards links */
 a:hover, a:focus {
   color: black;
   text-decoration: none;
@@ -103,9 +105,17 @@ a:hover, a:focus {
   height: 50%;
 }
 
+.bio-info {
+  justify-content: start;
+}
+
 /* Media query to resize photo of myself on home/index page on smaller devices */
 @media (max-width: 992px) { 
   h2 {
+    justify-content: center;
+  }
+
+  .bio-info {
     justify-content: center;
   }
 }

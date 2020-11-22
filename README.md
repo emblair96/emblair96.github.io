@@ -30,6 +30,8 @@
 
 * [CSS Gradient Animator](https://www.gradient-animator.com/)
 
-* The graphic elements in my about section are from [Github's primer style](https://primer.style/octicons/).  
+* Graphic elements in 'My Approach' section [Github's primer style](https://primer.style/octicons/)
+
+* [Fontawesome](https://fontawesome.com/) 
 
 ### License
