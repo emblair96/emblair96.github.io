@@ -25,9 +25,9 @@ body {
 }
 
 #welcome-msg {
-  /* height: 55vh; */
+  height: 50vh;
   background: linear-gradient(135deg, #862a5c, #f4a548, #7ebdb4, #f6d198);
-  background-size: 800% 800%;
+  background-size: 600% 600%;
 
   -webkit-animation: gradient 21s ease infinite;
   -moz-animation: gradient 21s ease infinite;
