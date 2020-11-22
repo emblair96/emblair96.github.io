@@ -20,7 +20,6 @@ body {
 }
 
 
-
 .btn {
   color: #f6f6f6 !important;
 }
@@ -53,10 +52,6 @@ body {
   0%{background-position:27% 0%}
   50%{background-position:74% 100%}
   100%{background-position:27% 0%}
-}
-
-.emilyPhoto { 
-  border-radius: 50%;
 }
 
 .approach-icon {
@@ -103,11 +98,6 @@ a:hover, a:focus {
   background: #f4a548 !important;
 }
 
-/* Change font size of links found on the cards w/ project info */
-.project-links {
-  font-size: .9rem;
-}
-
 /* Footer margin to deal with issue of fixed footer covering up content on smaller devices - only needed on contact page */
 .footer-margin{
   height: 50%;
@@ -115,9 +105,6 @@ a:hover, a:focus {
 
 /* Media query to resize photo of myself on home/index page on smaller devices */
 @media (max-width: 992px) { 
-  .emilyPhoto {
-    
-  }
 
   h2 {
     justify-content: center;
