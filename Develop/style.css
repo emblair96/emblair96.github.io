@@ -2,12 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
+/* header {
   position: sticky;
   top: 0;
   z-index: 5;
 
-}
+} */
 
 /* Background color */
 body {
