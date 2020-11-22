@@ -2,12 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* header {
+header {
   position: sticky;
   top: 0;
   z-index: 5;
 
-} */
+}
 
 /* Background color */
 body {
@@ -25,7 +25,7 @@ body {
 }
 
 #welcome-msg {
-  height: 50vh;
+  height: 70vh;
   background: linear-gradient(135deg, #862a5c, #f4a548, #7ebdb4, #f6d198);
   background-size: 800% 800%;
 
@@ -105,7 +105,6 @@ a:hover, a:focus {
 
 /* Media query to resize photo of myself on home/index page on smaller devices */
 @media (max-width: 992px) { 
-
   h2 {
     justify-content: center;
   }
