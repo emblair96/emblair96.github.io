@@ -25,6 +25,7 @@ body {
 }
 
 #welcome-msg {
+  height: 40vh;
   background: linear-gradient(135deg, #862a5c, #f4a548, #7ebdb4, #f6d198);
   background-size: 800% 800%;
 
