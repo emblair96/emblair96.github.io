@@ -7,8 +7,6 @@ html {
 body {
   background: #cfd8dc;
   font-family: 'Inconsolata', monospace;
-
-  /* color: #880e4f; */
 }
 
 h1 {
@@ -28,13 +26,11 @@ h5 {
   font-weight: 200;
 }
 
-
 /* Make navbar maintain when scrolling */
 header {
   position: sticky;
   top: 0;
   z-index: 5;
-
 }
 
 /* Overriding Bootstrap default bg color on navbar/footer */
@@ -42,19 +38,10 @@ header {
   background: #cfd8dc !important;
 }
 
-/* Making text lighter on buttons */
-/* .btn {
-  color: #f6f6f6 !important;
-} */
-
 /* Jumbotron gradient animated effect */
 #welcome-msg {
-  /* height: 40vh; */
   width: 70vw;
   background: #D8B4A0;
-  /* background-image: url(""); */
-  /* filter: blur(5px);
-  -webkit-filter: blur(5px); */
 }
 
 /* Resizing approach icons */
@@ -66,10 +53,6 @@ header {
 #animatedElement {
 	visibility: hidden;
 }
-/* 
-.project-highlights {
-  background: #9DB5B2;
-} */
 
 .card-text {
   font-size: 1.3em;
@@ -78,7 +61,6 @@ header {
 img {
   border-radius: .5em;
 }
-
 
 /* Make text black instead of Bootstrap default blue when making cards links */
 a {
@@ -107,52 +89,35 @@ a:hover, a:focus {
     }
 }
 
-
-/* Background color for text portion of the card body with my projects */
-/* .card-body, .project-highlight {
-  background: #D8B4A0 !important;
-} */
-
-/* .progress {   */
-  /* background: #223843 !important; */
-
-  /* background: #D8B4A0 !important; */
-/* } */
-
 /* Changing color of progress bar */
 .progress-bar {
   background: #37474f !important;
   /* background: #D8B4A0 !important; */
 }
 
-/* Footer margin to deal with issue of fixed footer covering up content on smaller devices - only needed on contact page */
-.footer-margin {
-  height: 50%;
-}
-/* 
-.bio-info {
-  justify-content: start;
-} */
-
 .project-links {
   justify-content: end;
 }
 
-/* Media query to resize photo of myself on home/index page on smaller devices */
+/* Footer margin to deal with issue of fixed footer covering up content on smaller devices - only needed on contact page */
+.footer-margin {
+  height: 50%;
+}
+
+/* Media queries for responsive design */
 @media (max-width: 992px) { 
   h2 {
     justify-content: center;
   }
 
   .project-links {
-  padding-top: 25px;
-} 
+    padding-top: 25px;
+  } 
 
-.card-title {
-  padding: 10px;
-  text-align: center;
-}
-
+  .card-title {
+    padding: 10px;
+    text-align: center;
+  }
 
 }
 
