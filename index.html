@@ -1,187 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emily's Portfolio</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="stylesheet" href="Develop/animations.css">
-    <link rel="stylesheet" href="Develop/style.css">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="Develop/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emily's Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+  <link rel="stylesheet" href="Develop/animations.css">
+  <link rel="stylesheet" href="Develop/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400&family=Poppins:wght@200;300;500;700&display=swap"
+    rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="Develop/script.js"></script>
 
 </head>
+
 <body>
-<!-- Navbar -->
-  <header id="home" class="">
+  <!-- Navbar -->
+  <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background:#e9ecef">
-    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link btn btn-outline-dark m-2" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link btn btn-outline-dark m-2" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="nav-item">
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-dark m-2" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-outline-dark m-2" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link btn btn-outline-dark m-2" href="#contact">Contact</a>
-        </li>
-      </ul>
-    </div>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
-<!-- 'Hi I'm Emily' welcome banner  -->
-  <section class="pt-5">  
-      <div class="jumbotron jumbotron-fluid rounded m-3 shadow-lg text-center" id="welcome-msg">
-        <div class="d-flex flex-column" id="welcome-msg-text">
-          <div style="height: 3vh"></div>
-          <h1 class="display-3">Hi, I'm Emily.</h1>
-          <p class="lead intro-subtitle">An aspiring software developer.</p>
-          <div style="height: 3vh"></div>
-        </div>
-      </div> 
+  <!-- 'Hi I'm Emily' welcome banner  -->
+  <section id="home" class="pt-5 d-flex justify-content-center">
+    <div class="jumbotron jumbotron-fluid rounded m-3 shadow-md text-center" id="welcome-msg">
+      <div class="d-flex flex-column" id="welcome-msg-text">
+        <div style="height: 3vh"></div>
+        <h1 class="display-3">Hi, I'm Emily.</h1>
+        <p class="lead intro-subtitle">A full stack software developer.</p>
+        <div style="height: 3vh"></div>
+      </div>
+    </div>
   </section>
 
-<!-- Photo and my approach to web development -->
+  <!-- Photo and my approach to web development -->
   <section class="container pb-3">
     <div class="row d-md-flex justify-content-center">
       <div class="col-lg-4 mt-3 emilyPhoto">
-          <img src="Assets/emily-photo.jpeg" class="img-fluid border rounded" alt="Photo of Emily Blair">
-          <div class="row d-flex pt-3 pl-2 bio-info">
-              <i class="fas fa-map-marker-alt fa-lg pt-1 pr-1"></i>
-              <h6 class="font-weight-light">Chicago</h6>
-          </div>
-          <div class="row d-flex pt-2 pl-2 bio-info">
-            <i class="fas fa-envelope fa-lg pt-1 pr-1"></i>
-            <h6 class="font-weight-light"><a href="mailto:emilyblair96@gmail.com">emilyblair96@gmail.com</a></h6>
-        </div>
-        <div class="row d-flex pt-2 pl-2 bio-info">
-          <i class="fas fa-mobile-alt fa-lg pt-1 pr-1"></i>
-          <h6 class="font-weight-light">636.288.8821</h6>
-        </div>
+        <img src="Assets/emily-photo.jpeg" class="img-fluid border rounded" alt="Photo of Emily Blair">
       </div>
       <div class="col-lg-8 mt-3">
         <h2 class="font-weight-light d-flex">My approach</h2>
-          <ul class="list-unstyled">
-              <li class="media p-2 my-approach">
-                <img src="Assets/git-branch.svg" class="mt-2 mr-3 approach-icon" alt="GitHub branch graphic">
-                <div class="media-body">
-                  <h5 class="mt-2 mb-1">Functionality</h5>
-                  My coding bootcamp instructor always reminded us to put functionality first.  If you have a pretty app that doesn't do anything, there's not much use to it, is there?  This is why I put functionality first.  The app needs to work and work right.  
-                </div>
-              </li>
-              <li class="media p-3 my-approach">
-                <img src="Assets/comment-discussion.svg" class="mr-3 approach-icon" alt="chat boxes">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">Collaboration</h5>
-                  One of my favorite aspects of web development is the inherhent collaborative nature of the field.  Working as a group or team allows us all to bring our various strengths together to build something that wouldn't have been possible alone.   
-                </div>
-              </li>
-              <li class="media p-3 my-approach">
-                <img src="Assets/sync.svg" class="mr-3 approach-icon" alt="sync icon two arrows in circular motion">
-                <div class="media-body">
-                  <h5 class="mt-0 mb-1">User Experience</h5>
-                  I believe web development should always be approached with the user in mind.  Will the added feature be intuitive?  Easy to nagivate?  Useful?  These are the questions I ask myself when building an app.
-                </div>
-              </li>
-          </ul>
+        <ul class="list-unstyled">
+          <li class="media p-2 my-approach">
+            <img src="Assets/git-branch.svg" class="mt-2 mr-3 approach-icon" alt="GitHub branch graphic">
+            <div class="media-body">
+              <h5 class="mt-2 mb-1">Functionality</h5>
+              My coding bootcamp instructor always reminded us to put functionality first. If you have a pretty app that
+              doesn't do anything, there's not much use to it, is there? This is why I put functionality first. The app
+              needs to work and work right.
+            </div>
+          </li>
+          <li class="media p-3 my-approach">
+            <img src="Assets/comment-discussion.svg" class="mr-3 approach-icon" alt="chat boxes">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Collaboration</h5>
+              One of my favorite aspects of web development is the inherhent collaborative nature of the field. Working
+              as a group or team allows us all to bring our various strengths together to build something that wouldn't
+              have been possible alone.
+            </div>
+          </li>
+          <li class="media p-3 my-approach">
+            <img src="Assets/sync.svg" class="mr-3 approach-icon" alt="sync icon two arrows in circular motion">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">User Experience</h5>
+              I believe web development should always be approached with the user in mind. Will the added feature be
+              intuitive? Easy to nagivate? Useful? These are the questions I ask myself when building an app.
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
-<!-- Visual representation of my progress in various programming languages -->
+  <!-- Visual representation of my progress in various programming languages -->
   <section class="container pt-3 pb-5">
     <h2 class="font-weight-light text-center">My developer journey</h2>
-    <h5>CSS</h5>
-    <div class="progress" style="height: 20px;">
-        <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    <h6>MongoDB</h6>
+    <div class="progress" style="height: 1em;">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 15%;" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100"></div>
     </div>
-    <h5>JavaScript</h5>
-    <div class="progress" style="height: 20px;">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 35%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    <h6>CSS 3</h6>
+    <div class="progress" style="height: 1em;">
+      <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100"></div>
     </div>
-    <h5>HTML</h5>
-    <div class="progress" style="height: 20px;">
-        <div class="progress-bar bg-warning" role="progressbar" style="width: 45%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    <h6>mySQL</h6>
+    <div class="progress" style="height: 1em;">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+    <h6>Node.js</h6>
+    <div class="progress" style="height: 1em;">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+    <h6>Git</h6>
+    <div class="progress" style="height: 1em;">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 65%;" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+    <div>
+    <h6>HTML 5</h6>
+    <div class="progress" style="height: 1em;">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+    <h6>JavaScript</h6>
+    <div class="progress" style="height: 1em;">
+      <div class="progress-bar bg-warning" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0"
+        aria-valuemax="100"></div>
+    </div>
+    <div>
+      Other: Express / Sequelize / Bootstrap / Heroku / jQuery / Handlebars / Security and Session Storage / User Authentication
     </div>
   </section>
 
-<!-- Project highlights -->
-  <section id="portfolio" class="container p-3">   
-    <h2 class="pb-3 font-weight-light text-center">My work</h2> 
-    <div class="row">
-      <div class="col-lg mb-4">
-        <a target="_blank" href="https://github.com/emblair96/eats-and-beats-app">
-          <div class="card shadow-lg">
-              <img src="Assets/eats-and-beats-logo.png" class="card-img-top p-5" alt="Eats and Beats logo with music note">
-              <div class="card-body front">
-                <h5 class="card-title">Eats and Beats</h5>
-                <p class="card-text">Where food meets music.  Developed in a group project, this app generates a recipe and playlist based on user input to create an immersive experience, that engages all senses, without leaving the confines of your kitchen.</p>
-              </div>
-          </div>
-        </a>
-      </div>
-      <div class="col-lg mb-4">
-        <a target="_blank" href="https://github.com/emblair96/HW6-weather-app">
-          <div class="card shadow-lg">
-              <img src="Assets/weather-app.png" class="card-img-top p-3" alt="Chicago weather dashboard with current and 5-day weather">
-              <div class="card-body">
-                <h5 class="card-title">Weather Quick Look</h5>
-                <p class="card-text">This app utilizes the OWM API to display weather data based on the user's search.  Local storage is used to create a search history and reload the user's last searched for city when they re-visit the site.</p>
-              </div>   
-          </div>
-        </a>
-      </div>
-      <div class="col mb-4">
-        <a target="_blank" href="https://github.com/emblair96/beginner-js-coding-quiz">
-          <div class="card shadow-lg">
-              <img src="Assets/js-coding-quiz.png" class="card-img-top p-3" alt="single-day calendar view with hourly timeslots">
-              <div class="card-body">
-                <h5 class="card-title">Basic JavaScript Coding Quiz Challenge</h5>
-                <p class="card-text">I created a basic coding quiz where the user automatically advances through a series of questions and answers while timed. At the end of the quiz, they can enter their intials to be included on the highscores page.</p>
-              </div>
-          </div>
-        </a>
-      </div>
-    </div>  
-       
-  </section>
-
-<!-- Contact form -->
-  <section id="contact" class="container col-lg-6 pt-5 pb-5">
-    <div class="col-lg-6"></div>
-    <h2 class="pb font-weight-light text-center">I'd love to share more about what I do.</h2>
-    <a href="Assets/e-blair-resume-11.2020.pdf" download="emily-blair-resume" class="h6 font-weight-light d-flex justify-content-center pb-4">Download my resume here.</a>
-    <form>
-        <div class="form-row pb-3">
-          <div class="col-md">
-            <label for="nameField">Name</label>
-            <input type="text" class="form-control" id="nameField" placeholder="Name">
-          </div>
-          <div class="col">
-                <label for="emailField">Email address</label>
-                <input type="email" class="form-control" id="emailField" placeholder="name@example.com">
+  <!-- Project highlights -->
+  <section>
+    <h2 class="text-center" id="portfolio">My work</h2>
+    
+    <!-- Keep on Giftin' Project -->
+    <section class="pt-5 container">
+      <div class="card project-highlights" style="background: #9DB5B2;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-4 d-flex justify-content-center">
+              <img style="max-width: 100%; height: auto;" src="https://images.unsplash.com/photo-1574279606130-09958dc756f7?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80" alt="Group of 4 individuals who are smiling and laughing together" class="img-fluid">
+            </div>
+            <div class="col-lg-8">
+              <h4 class="card-title">Keep on Giftin'</h4>
+              <p class="card-text">Created with a group of amazing women, this app helps organize your relationships.
+                Originally intended to help keep track of gift-giving events and holidays, this app can has professional
+                value making it manageable to keep track of your network.</p>
+              <p class="pt-3">Role: Backend || Team Members: Claudia Alpert, Amber Chidioni, Jen Doyle, & Melissa Ward
+              </p>
             </div>
         </div>
-        <label for="messageField">Your message</label>
-        <textarea class="form-control" id="messageField" rows="5"></textarea>
-        <div class="d-flex justify-content-end">
-          <button type="button" class="mt-3 btn btn-secondary">Connect with Emily</button>
+        <div class="d-flex flex-row justify-content-center justify-content-lg-end justify-content-xg-end project-links">
+          <a target="_blank" href="https://github.com/girl-power-5/ubiquitous-giggle" class="btn btn-outline-dark mr-1">GitHub Repo</a>
+          <a target="_blank" href="https://keep-on-giftin.herokuapp.com/" class="btn btn-outline-dark ml-1">Deployed app</a>
         </div>
-    </form> 
+        </div>
+      </div>
+    </section>
+
+    <!-- Eats & Beats Project -->
+    <section class="pt-5 container">
+      <div class="card project-highlights" style="background: #D8B4A0;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-4 d-flex justify-content-center">
+              <img style="max-width: 100%; height: auto;" src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1400&q=80" alt="Group of 4 individuals who are smiling and laughing together" class="img-fluid">
+            </div>
+            <div class="col-lg-8">
+              <h4 class="card-title">Eats & Beats</h4>
+              <p class="card-text">Where food meets music. Developed in a group project, this app generates a recipe and playlist based on user input to create an immersive experience, that engages all senses, without leaving the confines of your kitchen.</p>
+              <p class="pt-3">Role: Frontend JavaScript & API calls || Team Members: Amber Chidioni, Patrick Dalton, & Clement Valles
+              </p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center justify-content-lg-end justify-content-xg-end project-links">
+          <a target="_blank" href="https://github.com/emblair96/eats-and-beats-app" class="btn btn-outline-dark mr-1">GitHub Repo</a>
+          <a target="_blank" href="https://emblair96.github.io/eats-and-beats-app/" class="btn btn-outline-dark ml-1">Deployed app</a>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weather Dashboard Project -->
+    <section class="pt-5 container">
+      <div class="card project-highlights" style="background: #9DB5B2;">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-4 d-flex justify-content-center">
+              <img style="max-width: 100%; height: auto;" src="https://images.unsplash.com/photo-1485395578879-6ba080c9cdba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80" alt="Group of 4 individuals who are smiling and laughing together" class="img-fluid">
+            </div>
+            <div class="col-lg-8">
+              <h4 class="card-title">Weather Quick Look</h4>
+              <p class="card-text">This app utilizes the OWM API to display weather data based on the user's search. Local storage is used to create a search history and reload the user's last searched for city when they re-visit the site.</p>
+            </div>
+        </div>
+        <div class="d-flex flex-row justify-content-center justify-content-lg-end justify-content-xg-end project-links">
+          <a target="_blank" href="https://github.com/emblair96/weather-quick-look-app" class="btn btn-outline-dark mr-1">GitHub Repo</a>
+          <a target="_blank" href="https://emblair96.github.io/weather-quick-look-app/" class="btn btn-outline-dark ml-1">Deployed app</a>
+        </div>
+        </div>
+      </div>
+    </section>
+
   </section>
 
-<!-- Footer -->
-  <footer class="pt-5">
+  <!-- Contact info -->
+  <section id="contact" class="container col-lg-6 pt-5 pb-3">
+    <h4 class="pb font-weight-light text-center">I'd love to share more about what I do.</h4>
+    <a href="Assets/Emily_Blair_Resume.pdf" download="emily-blair-resume" class="font-weight-light d-flex justify-content-center pb-4" style="font-family: 'Poppins', sans-serif;">Download my resume here.</a>
+   
+    <div class="row d-flex justify-content-around">
+      <div class="bio-info col-sm-2">
+        <div class="d-flex pb-2 justify-content-center">
+          <i class="fas fa-map-marker-alt fa-lg pt-1 pr-1"></i>
+        </div>
+        <p style="font-family: 'Poppins', sans-serif; text-align: center;" class="font-weight-light">Chicago, IL</p>
+      </div>
+      <div class="bio-info col-sm-4">
+        <div class="d-flex justify-content-center pb-2">
+          <i class="fas fa-envelope fa-lg pt-1 pr-1"></i>
+        </div>
+        <p style="font-family: 'Poppins', sans-serif; text-align: center;" class="font-weight-light"><a
+        href="mailto:emilyblair96@gmail.com">emilyblair96@gmail.com</a></p>
+ 
+      </div>
+      <div class="bio-info col-sm-2">
+        <div class="d-flex justify-content-center pb-2">
+          <i class="fas fa-mobile-alt fa-lg pt-1 pr-1"></i>
+        </div>
+        <p style="font-family: 'Poppins', sans-serif; text-align: center;" class="font-weight-light">636.288.8821</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="pt-2">
     <div class="row d-flex justify-content-center footer">
       <div class="mt-4 text-secondary">
-        <div class="text-center">Cell: 636.288.8821</div>
-        <div class="text-center"><a class="text-secondary" href="mailto:emilyblair96@gmail.com">Email: emilyblair96@gmail.com</a></div>
         <div class="d-flex justify-content-center">
           <a href="https://github.com/emblair96" target="_blank">
             <i class="fab fa-github fa-lg m-1"></i>
@@ -190,11 +259,12 @@
             <i class="fab fa-linkedin-in fa-lg m-1"></i>
           </a>
         </div>
-        <p class="text-center mb-0 mt-4">Emily Blair <span style="color:#862a5c">&#169</span> 2020</p>
-      </div> 
+        <p class="text-center pb-2">Emily Blair &#169 2021</p>
+      </div>
     </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 </body>
+
 </html>

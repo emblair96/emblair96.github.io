@@ -3,6 +3,32 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Background color */
+body {
+  background: #cfd8dc;
+  font-family: 'Inconsolata', monospace;
+
+  /* color: #880e4f; */
+}
+
+h1 {
+  color: #37474f;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;  
+}
+
+h2, h4 {
+  color: #37474f;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+}
+
+
 /* Make navbar maintain when scrolling */
 header {
   position: sticky;
@@ -11,46 +37,24 @@ header {
 
 }
 
-/* Background color */
-body {
-    background: #f6f6f6;
-}
-
 /* Overriding Bootstrap default bg color on navbar/footer */
 .navbar, .footer {
-  background: darkgrey !important;
+  background: #cfd8dc !important;
 }
 
 /* Making text lighter on buttons */
-.btn {
+/* .btn {
   color: #f6f6f6 !important;
-}
+} */
 
 /* Jumbotron gradient animated effect */
 #welcome-msg {
-  height: 40vh;
-  background: linear-gradient(135deg, #862a5c, #f4a548, #7ebdb4, #f6d198);
-  background-size: 800% 800%;
-
-  -webkit-animation: gradient 21s ease infinite;
-  -moz-animation: gradient 21s ease infinite;
-  animation: gradient 21s ease infinite;
-}
-
-@-webkit-keyframes gradient {
-  0%{background-position:27% 0%}
-  50%{background-position:74% 100%}
-  100%{background-position:27% 0%}
-}
-@-moz-keyframes gradient {
-  0%{background-position:27% 0%}
-  50%{background-position:74% 100%}
-  100%{background-position:27% 0%}
-}
-@keyframes gradient {
-  0%{background-position:27% 0%}
-  50%{background-position:74% 100%}
-  100%{background-position:27% 0%}
+  /* height: 40vh; */
+  width: 70vw;
+  background: #D8B4A0;
+  /* background-image: url(""); */
+  /* filter: blur(5px);
+  -webkit-filter: blur(5px); */
 }
 
 /* Resizing approach icons */
@@ -62,22 +66,19 @@ body {
 #animatedElement {
 	visibility: hidden;
 }
+/* 
+.project-highlights {
+  background: #9DB5B2;
+} */
 
-/* Hover effect transition time */
-.card {
-  transition: 0.7s; 
+.card-text {
+  font-size: 1.3em;
 }
 
-/* Hover effect on projects, only on devices with pointer */
-@media(hover: hover) and
-(pointer: fine) {
-  .card:hover{
-    cursor: pointer;
-    opacity: 100%;
-    transform: scale(1.1);
-    border-radius: 2%;
-  }
+img {
+  border-radius: .5em;
 }
+
 
 /* Make text black instead of Bootstrap default blue when making cards links */
 a {
@@ -90,23 +91,51 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
-/* Background color for text portion of the card body with my projects */
-.card-body, .project-highlight {
-  background: #7ebdb4 !important;
+
+/* Hover effect transition time */
+.card {
+  transition: 0.7s; 
 }
+
+/* Hover effect on projects, only on devices with pointer */
+@media(hover: hover) and
+(pointer: fine) {
+  .card:hover{
+    cursor: pointer;
+    opacity: 100%;
+    transform: scale(1.01);
+    }
+}
+
+
+/* Background color for text portion of the card body with my projects */
+/* .card-body, .project-highlight {
+  background: #D8B4A0 !important;
+} */
+
+/* .progress {   */
+  /* background: #223843 !important; */
+
+  /* background: #D8B4A0 !important; */
+/* } */
 
 /* Changing color of progress bar */
 .progress-bar {
-  background: #f4a548 !important;
+  background: #37474f !important;
+  /* background: #D8B4A0 !important; */
 }
 
 /* Footer margin to deal with issue of fixed footer covering up content on smaller devices - only needed on contact page */
-.footer-margin{
+.footer-margin {
   height: 50%;
 }
-
+/* 
 .bio-info {
   justify-content: start;
+} */
+
+.project-links {
+  justify-content: end;
 }
 
 /* Media query to resize photo of myself on home/index page on smaller devices */
@@ -115,51 +144,25 @@ a:hover, a:focus {
     justify-content: center;
   }
 
-  .bio-info {
-    justify-content: center;
-  }
+  .project-links {
+  padding-top: 25px;
+} 
+
+.card-title {
+  padding: 10px;
+  text-align: center;
 }
 
 
+}
 
+@media (max-width: 500px) {
+  #welcome-msg {
+    width: 90vw;
+    height: 45vh;
+  }
 
-
-
-/* Customization - to be added in later */
-
-/* .btn-circle {
-    text-align: center;
-    padding: 0;
-    border-radius: 60%;
-    width: 65px;
-    height: 65px;
-    line-height: 60px;
-    font-size: 0.9rem;
-  } */
-
-  /* Working on typewriter effect for jumbotron header */
-
-/* .intro-subtitle {
-  display: inline-flex;
-  overflow: hidden; 
-  border-right: .15em solid black;
-  white-space: nowrap;
-  margin: 0 auto;
-  animation: 
-  typing 5s steps(60, end),
-  blink-caret .75s step-end infinite;
-} */
-
-/* The typewriter cursor effect just keeps going, can't figure out why? */
-/* 
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: black; } 
-} */
-
-
-/* The typing effect */
-/* @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-} */
+  #welcome-msg-text {
+    margin-bottom: 25px;
+  }
+}
