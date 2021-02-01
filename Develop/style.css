@@ -55,7 +55,7 @@ header {
 }
 
 .card-text {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 img {
@@ -92,7 +92,6 @@ a:hover, a:focus {
 /* Changing color of progress bar */
 .progress-bar {
   background: #37474f !important;
-  /* background: #D8B4A0 !important; */
 }
 
 .project-links {
