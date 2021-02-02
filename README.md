@@ -12,13 +12,9 @@
 * [Font Awesome](https://fontawesome.com/)
 
 ### What you'll find on my portfolio
-
-* My approach to software development
-
+* What brought me to software development
 * My level of familiarity with vairous programming languages
-
 * Example projects I've worked on
-
 * How to connect with me
 
 ### Links 
@@ -27,11 +23,13 @@
 
 ### Credits
 * [Justin Aguilar's animation resource.](http://www.justinaguilar.com/animations/#)
-
 * [CSS Gradient Animator](https://www.gradient-animator.com/)
+* Icons: 
+  * [Github's primer style](https://primer.style/octicons/)
+  * [Fontawesome](https://fontawesome.com/) 
 
-* Graphic elements in 'My Approach' section [Github's primer style](https://primer.style/octicons/)
+## License
+Copyright &copy; Licensed under the MIT license.
 
-* [Fontawesome](https://fontawesome.com/) 
-
-### License
+## Questions
+Contact me at emilyblair96@gmail.com with questions.
