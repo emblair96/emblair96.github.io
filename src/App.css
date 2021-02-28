@@ -1,0 +1,40 @@
+/* Makes smooth scrolling experience when click on menu item */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background color */
+/* body {
+  background: #cfd8dc;
+  font-family: 'Inconsolata', monospace;
+} */
+
+#welcome-msg {
+  width: 70vw;
+  height: 35vh;
+  /* border: 2px solid #283593;   */
+  /* border: 2px solid #3949ab;   */
+  background: #D8B4A0;
+  /* background: #ef5350; */
+  /* color: #cfd8dc; */
+  color: #37474f;
+  border-radius: .5em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  margin: 3em 3em;
+}
+
+/* h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+} */
+
+.subheader {
+  color: #37474f;
+  display: flex;
+  justify-content: center;
+}
+
+
