@@ -1,24 +1,28 @@
 import React from 'react'
-import { Grid, Container, Typography, Paper } from '@material-ui/core';
+import { Grid } from '@material-ui/core';
 import AboutMeSnippet from './AboutMeSnippet'
 import '../App.css';
-import { ThemeProvider } from '@material-ui/styles';
+import Icon from '@material-ui/core/Icon';
+
 import emilyPhoto from '../images/emily-photo.jpeg';
 
 export default function AboutMe({ theme }) {
 
   return (
+
       <Grid
         container
         spacing={10}
         direction="row"
+        justify="center"
       >
 
-        <Grid item xs={12} sm={4} >
+
+        <Grid item xs={12} md={4} >
           <img className="profile-photo" alt="Emily Blair on beach" src={emilyPhoto}/>
           <h4>Insert animation w/ adjectives describing myself.</h4>
         </Grid>
-        <Grid item xs={12} sm={8}>
+        <Grid item xs={12} md={8}>
         <AboutMeSnippet
             theme={theme}
             title="Background"
@@ -32,7 +36,7 @@ export default function AboutMe({ theme }) {
         <AboutMeSnippet
             theme={theme}
             title="Women in Tech"
-            text="I have always had a passion for helping women develop a sense of confidence. My Boot Camp instructor, Lori Culberson, has been an amazing female role-model in this aspect. As I learn and grow as a developer, I hope that one day I can be a mentor for women entering the field as Lori has been for me."
+            text="I have always had a passion for helping women develop a sense of confidence. My Boot Camp instructor, Lori Culberson, has been an amazing female role-model. As I grow as a developer, I also hope to be a mentor for women entering the field."
           />
         </Grid>
 

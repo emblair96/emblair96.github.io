@@ -37,7 +37,7 @@ export default function Navbar(props) {
     <React.Fragment>
       <CssBaseline />
       <ElevationScroll {...props}>
-        <AppBar>
+        <AppBar style={{backgroundColor: "#cfd8dc"}}>
           <Container>
             <Grid
               container

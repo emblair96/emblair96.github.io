@@ -23,7 +23,7 @@ html {
   font-weight: 200;
   display: flex;
   justify-content: center;
-  margin: 3em 3em;
+  margin: 3em 0em;
 }
 
 .container {
@@ -46,7 +46,38 @@ html {
 .profile-photo {
   height: 30vh;
   border-radius: .5em;
-  margin-right: 2em;
+  margin-right: auto;
 }
 
+.progress-categories {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: #37474f;
+}
 
+/* Changing color of progress bar */
+/* .progress-bar {
+  fill: red !important;
+  background-color: #37474f !important;
+  height: .5em !important;
+  border-radius: .5em !important;
+} */
+
+
+
+@media (max-width: 500px) {
+  #welcome-msg {
+    width: 90vw;
+    height: 45vh;
+  }
+/* 
+  #welcome-msg-text {
+    margin-bottom: 25px;
+    display: flex-column;
+    justify-content: center;
+  } */
+
+  /* .profile-photo {
+    margin: auto;
+  } */
+}
