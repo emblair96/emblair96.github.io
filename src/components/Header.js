@@ -3,7 +3,6 @@ import Typography from '@material-ui/core/Typography';
 import '../App.css';
 import { ThemeProvider } from '@material-ui/styles';
 
-
 export default function Header({ theme2 }) {
   return (
     <Container id="welcome-msg" >
