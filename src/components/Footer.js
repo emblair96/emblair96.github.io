@@ -8,7 +8,7 @@ export default function Footer() {
 
   return (
     <>
-    <Divider />
+    <Divider style={{marginTop: "6em"}} />
     <Grid
       container
       spacing={1}

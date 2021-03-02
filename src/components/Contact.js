@@ -1,7 +1,7 @@
-import { Container, Grid, Typography, Divider, Icon } from '@material-ui/core';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
-import EmailIcon from '@material-ui/icons/Email';
-import SmartphoneIcon from '@material-ui/icons/Smartphone';
+import { Container, Grid } from '@material-ui/core';
+// import LocationOnIcon from '@material-ui/icons/LocationOn';
+// import EmailIcon from '@material-ui/icons/Email';
+// import SmartphoneIcon from '@material-ui/icons/Smartphone';
 import { ThemeProvider } from '@material-ui/styles';
 import Form from './Form';
 import '../App.css';
@@ -11,7 +11,6 @@ export default function Contact({ theme2 }) {
   return (
     <ThemeProvider theme={theme2}>
       
-    {/* <Form /> */}
       <Container
         className="contact-section"
 
@@ -21,21 +20,22 @@ export default function Contact({ theme2 }) {
           className="contact-section"
         >
           <div className="contact-options">
-            <Icon fontSize="large" component={LocationOnIcon} />
-            <Typography variant="h6">Chicago, IL</Typography>
+            <p>Chicago, IL</p>
+            {/* <Icon component={LocationOnIcon} /> */}
           </div>
-            <a href="mailto:emilyblair96@gmail.com">
           <div className="contact-options">
-            <Icon fontSize="large"  component={EmailIcon} />
-            <Typography variant="h6">emilyblair96@gmail.com</Typography>
+            
+            <p><a href="mailto:emilyblair96@gmail.com">emilyblair96@gmail.com</a></p>
+            
+            {/* <Icon component={EmailIcon} /> */}
           </div>
-            </a>
           <div className="contact-options">
-          <Icon fontSize="large" component={SmartphoneIcon} />
-          <Typography variant="h6">636.288.8821</Typography>
+          <p>636.288.8821</p>
+          {/* <Icon component={SmartphoneIcon} /> */}
           </div>
         </Grid>
-        {/* <Form /> */}
+        <Form />
+     
       </Container>
 
     </ThemeProvider>
