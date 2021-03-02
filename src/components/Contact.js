@@ -35,6 +35,7 @@ export default function Contact({ theme2 }) {
           <Typography variant="h6">636.288.8821</Typography>
           </div>
         </Grid>
+        {/* <Form /> */}
       </Container>
 
     </ThemeProvider>
