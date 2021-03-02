@@ -18,9 +18,15 @@ export default function Footer() {
     >
       <Typography variant="h6">Emily Blair Copyright 2021</Typography>
       <div>
-        <Icon component={LinkedInIcon} />
-        <Icon component={GitHubIcon} />
-        <Icon component={TwitterIcon} />
+        <a href="https://www.linkedin.com/in/emilyblair96/" target="_blank">
+          <Icon component={LinkedInIcon} />
+        </a>
+        <a href="https://github.com/emblair96" target="_blank">
+          <Icon component={GitHubIcon} />
+        </a>
+        <a href="https://twitter.com/algorithEm_" target="_blank">
+          <Icon component={TwitterIcon} />
+        </a>
       </div>
     </Grid>
     </>

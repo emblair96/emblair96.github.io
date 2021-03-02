@@ -12,7 +12,7 @@ export default function DeveloperJourney() {
         justify="center"
       >
 
-        <Grid item xs={8} sm={6}>
+        <Grid item xs={10} sm={6}>
           <h2 className="progress-categories">Browser-based technologies</h2>
           <h3>React</h3>
           <LinearProgress
@@ -40,7 +40,7 @@ export default function DeveloperJourney() {
           />
         </Grid>
 
-        <Grid item xs={8} sm={6}>
+        <Grid item xs={10} sm={6}>
           <h2 className="progress-categories">Server-side technologies</h2>
           <h3>MongoDB & Mongoose</h3>
           <LinearProgress
@@ -68,7 +68,9 @@ export default function DeveloperJourney() {
           />
 
         </Grid>
-        <h3 style={{ marginBottom: "3em" }}>Other: Bootstrap / jQuery / Git / Heroku / Handlebars / Test-Driven Development / Security and Session Storage / User Authentication</h3>
+        <Container style={{marginBottom: "3em"}}>
+          <h3>Other: Bootstrap / jQuery / Git / Heroku / Handlebars / Security and Session Storage / User Authentication / Responsive Design</h3>
+        </Container>
 
       </Grid>
 

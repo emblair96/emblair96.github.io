@@ -1,4 +1,5 @@
 import React from 'react';
+
 import PropTypes from 'prop-types';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import useScrollTrigger from '@material-ui/core/useScrollTrigger';
@@ -49,7 +50,7 @@ export default function Navbar(props) {
                 <Button className="btn" style={{margin: ".3em", fontSize: "1.2em"}} variant="outlined" href="#outlined-buttons">
                   Home
                 </Button>
-                <Button style={{margin: ".3em", fontSize: "1.2em"}} variant="outlined" href="#outlined-buttons">
+                <Button style={{margin: ".3em", fontSize: "1.2em"}} variant="outlined" href="#projects">
                   Projects
                 </Button>
                 <Button style={{margin: ".3em", fontSize: "1.2em"}} variant="outlined" href="#outlined-buttons">

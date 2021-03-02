@@ -91,11 +91,14 @@ body {
   padding: 4em;
 }
 
+a {
+  padding: .8em;
+}
+
 @media(hover: hover) and
 (pointer: fine) {
   .card:hover {
     cursor: pointer;
-    opacity: 100%;
     transform: scale(1.01);
     }
 }
@@ -106,14 +109,18 @@ body {
     width: 90vw;
     height: 45vh;
   }
-/* 
+
   #welcome-msg-text {
     margin-bottom: 25px;
-    display: flex-column;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-  } */
+  } 
 
-  /* .profile-photo {
+   .profile-photo {
     margin: auto;
-  } */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

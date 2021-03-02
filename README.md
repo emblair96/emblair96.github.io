@@ -8,7 +8,7 @@
 * JavaScript
 * React
 * [Material UI](https://material-ui.com/)
-* [Google Fonts] (https://fonts.google.com/)
+* [Google Fonts](https://fonts.google.com/)
 
 ### What you'll find on my portfolio
 * What brought me to software development

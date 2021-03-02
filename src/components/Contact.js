@@ -3,12 +3,15 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import EmailIcon from '@material-ui/icons/Email';
 import SmartphoneIcon from '@material-ui/icons/Smartphone';
 import { ThemeProvider } from '@material-ui/styles';
+import Form from './Form';
 import '../App.css';
 
 
 export default function Contact({ theme2 }) {
   return (
-    <ThemeProvider theme={theme2}>ß
+    <ThemeProvider theme={theme2}>
+      
+    {/* <Form /> */}
       <Container
         className="contact-section"
 
@@ -21,10 +24,12 @@ export default function Contact({ theme2 }) {
             <Icon fontSize="large" component={LocationOnIcon} />
             <Typography variant="h6">Chicago, IL</Typography>
           </div>
+            <a href="mailto:emilyblair96@gmail.com">
           <div className="contact-options">
-            <Icon fontSize="large" component={EmailIcon} />
+            <Icon fontSize="large"  component={EmailIcon} />
             <Typography variant="h6">emilyblair96@gmail.com</Typography>
           </div>
+            </a>
           <div className="contact-options">
           <Icon fontSize="large" component={SmartphoneIcon} />
           <Typography variant="h6">636.288.8821</Typography>

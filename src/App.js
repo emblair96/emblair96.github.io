@@ -1,3 +1,9 @@
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Subheader from './components/Subheader';
@@ -13,6 +19,7 @@ import './App.css';
 
 function App() {
   return (
+    <Router>
     <div className="App" style={{ backgroundColor: "#cfd8dc" }}>
       <Container>
           <ThemeProvider theme={theme}>
@@ -22,7 +29,7 @@ function App() {
               <AboutMe theme={theme} />
             <Subheader theme2={theme2} text="My Developer Journey" />
               <DeveloperJourney />
-            <Subheader theme2={theme2} text="My Work" />
+            <Subheader theme2={theme2} text="My Work" id="project" />
               <MyWork />
             <Subheader theme2={theme2} text="Contact Me" />
               <Contact theme2={theme2} />
@@ -30,6 +37,7 @@ function App() {
           </ThemeProvider>
       </Container>
     </div>
+    </Router>
   );
 }
 
