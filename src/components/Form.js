@@ -59,27 +59,3 @@ export default function Form() {
     </Container>
   );
 }
-
-// export default function Form() {
-//   // const [formStatus, setFormStatus] = useState(false);
-//   // const [query, setQuery] = useState({
-//   //   name: "",
-//   //   email: "",
-//   //   platform: ""
-//   // });
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//   }
-
-// //   return (
-//   <form action="https://getform.io/f/307f232d-a51b-4229-9ac7-526019627510" method="POST">
-// <TextField><input type="text" name="name"/></TextField>
-// <input type="email" name="email"/>
-// <input type="text" name="message"/>
-// <button type="submit">Send</button>
-
-// </form>
-
-//   )
-// }
