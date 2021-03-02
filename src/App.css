@@ -1,13 +1,18 @@
+* {
+  color: #37474f;
+}
+
 /* Makes smooth scrolling experience when click on menu item */
 html {
   scroll-behavior: smooth;
 }
 
 /* Background color */
-/* body {
+body {
   background: #cfd8dc;
   font-family: 'Inconsolata', monospace;
-} */
+  
+}
 
 #welcome-msg {
   width: 80vw;
@@ -17,7 +22,6 @@ html {
   background: #D8B4A0;
   /* background: #ef5350; */
   /* color: #cfd8dc; */
-  color: #37474f;
   border-radius: .5em;
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
@@ -31,14 +35,17 @@ html {
   display: flex;
 }
 
+.section-container {
+  margin: 3em;
+}
+
 /* h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
 } */
 
 .subheader {
-  color: #37474f;
-  margin: 3em 0em;
+  margin: 2em 0em;
   display: flex;
   justify-content: center;
 }
@@ -56,13 +63,42 @@ html {
 }
 
 /* Changing color of progress bar */
-/* .progress-bar {
+.progress-bar {
   fill: red !important;
-  background-color: #37474f !important;
+  background-color: #5c6bc0 !important;
   height: .5em !important;
   border-radius: .5em !important;
-} */
+}
 
+.card {
+  transition: 0.7s; 
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0em 1em 3em 1em;
+
+}
+
+.footer {
+  padding: 4em;
+}
+
+@media(hover: hover) and
+(pointer: fine) {
+  .card:hover {
+    cursor: pointer;
+    opacity: 100%;
+    transform: scale(1.01);
+    }
+}
 
 
 @media (max-width: 500px) {

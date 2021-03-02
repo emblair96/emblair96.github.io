@@ -1,5 +1,5 @@
 import React from 'react'
-import { Grid } from '@material-ui/core';
+import { Grid, Container } from '@material-ui/core';
 import AboutMeSnippet from './AboutMeSnippet'
 import '../App.css';
 import Icon from '@material-ui/core/Icon';
@@ -9,6 +9,8 @@ import emilyPhoto from '../images/emily-photo.jpeg';
 export default function AboutMe({ theme }) {
 
   return (
+    <div>
+    <Container>
 
       <Grid
         container
@@ -16,13 +18,12 @@ export default function AboutMe({ theme }) {
         direction="row"
         justify="center"
       >
-
-
-        <Grid item xs={12} md={4} >
+        <Grid item xs={12} lg={5} >
           <img className="profile-photo" alt="Emily Blair on beach" src={emilyPhoto}/>
           <h4>Insert animation w/ adjectives describing myself.</h4>
         </Grid>
-        <Grid item xs={12} md={8}>
+
+        <Grid item xs={12} lg={7}>
         <AboutMeSnippet
             theme={theme}
             title="Background"
@@ -41,6 +42,8 @@ export default function AboutMe({ theme }) {
         </Grid>
 
       </Grid>
+      </Container>
+      </div>
   )
 }
 

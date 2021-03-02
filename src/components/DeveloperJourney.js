@@ -5,14 +5,14 @@ import '../App.css';
 
 export default function DeveloperJourney() {
   return (
-    <>
       <Grid
         container
         spacing={10}
         direction="row"
         justify="center"
       >
-        <Grid item sm={12} md={5}>
+
+        <Grid item xs={8} sm={6}>
           <h2 className="progress-categories">Browser-based technologies</h2>
           <h3>React</h3>
           <LinearProgress
@@ -39,7 +39,8 @@ export default function DeveloperJourney() {
             value={80}
           />
         </Grid>
-        <Grid item sm={12} md={5}>
+
+        <Grid item xs={8} sm={6}>
           <h2 className="progress-categories">Server-side technologies</h2>
           <h3>MongoDB & Mongoose</h3>
           <LinearProgress
@@ -67,8 +68,9 @@ export default function DeveloperJourney() {
           />
 
         </Grid>
+        <h3 style={{ marginBottom: "3em" }}>Other: Bootstrap / jQuery / Git / Heroku / Handlebars / Test-Driven Development / Security and Session Storage / User Authentication</h3>
+
       </Grid>
-      <h3 style={{margin: "3em 7em"}}>Other: Bootstrap / jQuery / Git / Heroku / Handlebars / Test-Driven Development / Security and Session Storage / User Authentication</h3>
-    </>
+
   )
 }
