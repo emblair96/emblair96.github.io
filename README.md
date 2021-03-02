@@ -6,10 +6,9 @@
 * HTML
 * CSS
 * JavaScript
-* jQuery
-* [Bootstrap](https://getbootstrap.com/)
-* [Free Formatter, HTML validator](https://www.freeformatter.com/html-validator.html)
-* [Font Awesome](https://fontawesome.com/)
+* React
+* [Material UI](https://material-ui.com/)
+* [Google Fonts] (https://fonts.google.com/)
 
 ### What you'll find on my portfolio
 * What brought me to software development
@@ -22,11 +21,7 @@
 * [GitHub Repository](https://github.com/emblair96/emblair96.github.io)
 
 ### Credits
-* [Justin Aguilar's animation resource.](http://www.justinaguilar.com/animations/#)
-* [CSS Gradient Animator](https://www.gradient-animator.com/)
-* Icons: 
-  * [Github's primer style](https://primer.style/octicons/)
-  * [Fontawesome](https://fontawesome.com/) 
+ 
 
 ## License
 Copyright &copy; Licensed under the MIT license.
