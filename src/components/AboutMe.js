@@ -1,17 +1,41 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Grid, Container } from '@material-ui/core';
 import AboutMeSnippet from './AboutMeSnippet';
 import '../App.css';
 import Icon from '@material-ui/core/Icon';
+import Typed from 'typed.js';
+
 
 import emilyPhoto from '../images/emily-photo.jpeg';
 
 export default function AboutMe({ theme }) {
 
+  var text = ["I am compassionate.", "I am determined.", "I am empathetic.", "I am creative.", "I am hardworking.", "I am bold.", "I am an effective communicator.", "I am dynamic."]
+
+  useEffect(() => {
+
+    // Options for the Typed object
+    const options = {
+        strings: text,
+        typeSpeed: 70,  
+        backDelay: 700,
+        backSpeed:40,
+        showCursor: true,
+
+    };
+
+    // New Typed instance
+    const typed = new Typed('#adjectives', options);
+
+    // Destroy Typed instance on unmounting the component to prevent memory leaks
+    return () => {
+        typed.destroy();
+    };
+}, [text]);
+
   return (
     <div>
     <Container>
-
       <Grid
         container
         spacing={10}
@@ -20,6 +44,9 @@ export default function AboutMe({ theme }) {
       >
         <Grid item xs={12} lg={5} >
           <img className="profile-photo" alt="Emily Blair on beach" src={emilyPhoto}/>
+          <br/>
+          <h1 style={{display: "inline", fontSize: "3em"}} id='adjectives'></h1>
+        <h1 >Who is Emily?</h1>
         </Grid>
 
         <Grid item xs={12} lg={7}>
