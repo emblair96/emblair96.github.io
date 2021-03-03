@@ -3,6 +3,7 @@ import { Grid, Container } from '@material-ui/core';
 import AboutMeSnippet from './AboutMeSnippet';
 import '../App.css';
 import Icon from '@material-ui/core/Icon';
+import Animation from './Animation'
 
 import emilyPhoto from '../images/emily-photo.jpeg';
 
@@ -20,8 +21,8 @@ export default function AboutMe({ theme }) {
       >
         <Grid item xs={12} lg={5} >
           <img className="profile-photo" alt="Emily Blair on beach" src={emilyPhoto}/>
+        <Animation />
         </Grid>
-
         <Grid item xs={12} lg={7}>
         <AboutMeSnippet
             theme={theme}
