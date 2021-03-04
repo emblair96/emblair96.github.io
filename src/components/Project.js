@@ -23,7 +23,7 @@ const useStyles = makeStyles({
 });
 
 
-export default function Project({title, description, img}) {
+export default function Project({title, description, img, repoLink, deployedLink}) {
   const classes = useStyles();
   return (
     // <h1>I'm a project!</h1>
@@ -44,10 +44,10 @@ export default function Project({title, description, img}) {
         </CardContent>
       </CardActionArea>
       <CardActions>
-        <Button size="large" color="#37474f">
+        <Button size="large" color="#37474f" href={repoLink} target="_blank">
           GitHub Repo
         </Button>
-        <Button size="large" color="#37474f">
+        <Button size="large" color="#37474f" href={deployedLink} target="_blank">
           Deployed Link
         </Button>
       </CardActions>
