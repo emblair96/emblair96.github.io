@@ -1,4 +1,4 @@
-* {
+p,h1,h2,h3,h4,h5,h6,a {
   color: #37474f;
 }
 
@@ -11,7 +11,16 @@ html {
 body {
   background: #cfd8dc;
   font-family: 'Inconsolata', monospace;
-  
+  /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
+  segoe ui, arial, sans-serif; */
+/* background: transparent;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+cursor: default; */
 }
 
 #welcome-msg {
@@ -29,6 +38,24 @@ body {
   justify-content: center;
   margin: 3em 0em;
 }
+
+.transitions-item {
+  
+  overflow: hidden;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  will-change: transform, opacity, height;
+  white-space: nowrap;
+  cursor: pointer;
+  line-height: 100px;
+}
+
 
 .container {
   margin: 0em 5em;
