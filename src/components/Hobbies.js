@@ -7,11 +7,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptop, faCoffee, faBicycle, faDog, faHiking, faPuzzlePiece, faPodcast, faPlane } from '@fortawesome/free-solid-svg-icons'
 
 
-export default function Animation() {
+export default function Hobbies() {
   return (
     <div>
-
-      <h3 style={{textAlign: "center"}}>What I do when I'm not coding:</h3>
+      <h3>Some things I enjoy:</h3>
       <FontAwesomeIcon className="fa-4x tossing hobbie-icons" icon={faLaptop} />
       <FontAwesomeIcon className="fa-4x floating hobbie-icons" icon={faCoffee} />
       <FontAwesomeIcon className="fa-4x tossing hobbie-icons" icon={faBicycle} />
