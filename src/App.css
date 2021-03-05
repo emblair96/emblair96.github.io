@@ -156,13 +156,18 @@ a {
     }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1290px) {
   #welcome-msg {
-    height: 60vh;
+    height: 45vh;
+  }
+
+  .welcome-msg-text {
+    font-size: 5rem;
+
   }
 
   .full-stack {
-    font-size: 2em;
+    font-size: 1.4em;
   }
 }
 
@@ -170,7 +175,7 @@ a {
 @media (max-width: 1024px) {
 
   #welcome-msg {
-    height: 55vh;
+    height: 35vh;
   }
 
 
