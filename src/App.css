@@ -158,11 +158,11 @@ a {
 
 @media (max-width: 1290px) {
   #welcome-msg {
-    height: 60vh;
+    height: 100vh;
   }
 
   .welcome-msg-text {
-    font-size: 4rem;
+    font-size: 6rem;
 
   }
 
