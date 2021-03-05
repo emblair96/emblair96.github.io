@@ -40,6 +40,7 @@ export default function Navbar(props) {
       <ElevationScroll {...props}>
         <AppBar style={{backgroundColor: "#cfd8dc"}}>
           <Container>
+            
             <Grid
               container
               direction="row"

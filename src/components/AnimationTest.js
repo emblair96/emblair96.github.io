@@ -1,15 +1,31 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react'
-import { render } from 'react-dom'
 import { useTransition, animated } from 'react-spring'
+
 import '../App.css';
+import {
+  createMuiTheme,
+  ThemeProvider,
+  useTheme
+} from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 export default function AnimationTest() {
+  var line = 100
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const responsive = matches 
+                    ? line = 100
+                    : line = 40
+
+
+
+
   const ref = useRef([])
   const [items, set] = useState([])
   const transitions = useTransition(items, null, {
     from: { opacity: 0, height: 0, innerHeight: 0, transform: 'perspective(600px) rotateX(0deg)', color: '#37474f' },
     enter: [
-      { opacity: 1, height: 80, innerHeight: 80 },
+      { opacity: 1, height: line, innerHeight: line },
       { transform: 'perspective(600px) rotateX(180deg)', color: '#303f9f' },
       { transform: 'perspective(600px) rotateX(0deg)' },
     ],
@@ -22,9 +38,9 @@ export default function AnimationTest() {
     ref.current = []
     set([])
     ref.current.push(setTimeout(() => set(['Emily', 'Blair']), 200))
-    ref.current.push(setTimeout(() => set(['Emily', 'Empathetic', 'Blair']), 3000))
+    ref.current.push(setTimeout(() => set(['Emily', 'Empathetic', 'Blair']), 2500))
     ref.current.push(setTimeout(() => set(['Emily', 'Blair']), 5000))
-    ref.current.push(setTimeout(() => set(['Emily', 'Creative', 'Blair']), 8000))
+    ref.current.push(setTimeout(() => set(['Emily', 'Creative', 'Blair']), 8200))
     ref.current.push(setTimeout(() => set(['Emily', 'Blair']), 10800))
     ref.current.push(setTimeout(() => set(['Emily', 'Innovative', 'Blair']), 14000))
     ref.current.push(setTimeout(() => set(['Emily', 'Blair']), 17000))
