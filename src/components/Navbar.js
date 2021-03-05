@@ -27,16 +27,17 @@ export default function Navbar(props, ref) {
         <CssBaseline />
         <ElevationScroll {...props}>
           <AppBar style={{ backgroundColor: "#cfd8dc" }}>
-            <Container>
+            <Container >
 
               <Grid
                 container
                 direction="row"
                 justify="flex-end"
                 alignItems="center"
+                
               >
 
-                <Toolbar>
+                <Toolbar className="navbar-btns">
                   
                   <Link to="home">
                     <Button className="btn" style={{ margin: ".3em", fontSize: "1.2em" }} variant="outlined" to="#home"> 

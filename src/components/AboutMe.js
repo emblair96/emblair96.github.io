@@ -17,7 +17,7 @@ export default function AboutMe({ theme }) {
         direction="row"
         justify="center"
       >
-        <Grid item xs={12} lg={5} >
+        <Grid item lg={5} align="center"  >
           <img className="profile-photo" alt="Emily Blair on beach" src={emilyPhoto}/>
         <Hobbies />
         </Grid>

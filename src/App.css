@@ -25,9 +25,10 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   display: flex;
-  align-self: center;
+  align-content: center;
   flex-direction: row;
-  margin: 3em 0em;
+  /* margin: 3em 0em; */
+  margin: 0 auto;
 }
 
 .transitions-item {
@@ -88,6 +89,8 @@ body {
 .profile-photo {
   height: 30vh;
   border-radius: .5em;
+  margin: 0 auto;
+
 }
 
 .hobbie-icons {
@@ -163,6 +166,8 @@ a {
   .welcome-msg-text {
     font-size: 6.6em;
   } 
+
+
   
 }
 
@@ -193,6 +198,11 @@ a {
 }
 
 @media (max-width: 500px) {
+
+  .navbar-btns {
+    margin: 0 auto;
+  }
+
   #welcome-msg {
     width: 90vw;
     height: 45vh;
@@ -202,13 +212,11 @@ a {
 
   .welcome-msg-text {
     display: inline;
-
+    text-align: center;
   } 
 
    .profile-photo {
-    margin: auto;
-    /* display: flex;
-    flex-direction: column;*/
+
     align-content: center; 
     height: 30vh;
 
@@ -221,6 +229,23 @@ a {
   .full-stack {
     font-size: 1.7em;
 
+  }
+
+  .hobbie-icons {
+    margin: 0em .3em;
+
+  }
+
+  .contact-section {
+    /* flex-direction: column; */
+    margin: 0em;
+    line-height: 0;
+    display: block;
+    margin-bottom: 3em;
+  }
+
+  .contact-options {
+    padding: 0;
   }
 
 }

@@ -71,8 +71,6 @@ export default function DeveloperJourney() {
            <Grid style={{marginBottom: "3em"}} item xs={10} sm={10}>
           <h3>Other Technologies: Bootstrap / jQuery / Git / Heroku / Handlebars / Security and Session Storage / User Authentication / Responsive Design</h3>
            </Grid>
-        <Container style={{marginBottom: "3em"}}>
-        </Container>
 
       </Grid>
 
