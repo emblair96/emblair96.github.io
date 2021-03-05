@@ -8,6 +8,7 @@ export default function AnimationTest() {
   var line = 100
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
+  const extraSmall = useMediaQuery(theme.breakpoints.down("xs"));
 
   const ref = useRef([])
   const [items, set] = useState([])
@@ -62,10 +63,11 @@ export default function AnimationTest() {
     </animated.div>
   ))}
 </div>
-  : <h1 style={{fontSize: "6em", lineHeight: "80px", textTransform: "uppercase", display: "inline"}} className="welcome-msg-text">Emily Blair</h1>
-
+  : <h1 style={{textTransform: "uppercase", display: "inline"}} className="welcome-msg-text">Emily Blair</h1>
   return (
     <div>
+
+
       {responsive}
       {/* {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
         <animated.div className="transitions-item" key={key} style={rest}>

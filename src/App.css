@@ -156,26 +156,32 @@ a {
     }
 }
 
-@media (max-width: 1024px) {
-
-
+@media (max-width: 1280px) {
   #welcome-msg {
-    height: 35vh;
+    height: 60vh;
   }
 
-  .welcome-msg-text {
-    font-size: 6.6em;
-  } 
-
-
-  
+  .full-stack {
+    font-size: 2em;
+  }
 }
 
+
 @media (max-width: 1024px) {
 
   #welcome-msg {
-    height: 45vh;
+    height: 55vh;
   }
+
+
+  .welcome-msg-text {
+    font-size: 5.8em;
+  } 
+
+  .full-stack {
+    font-size: 1.5em;
+  }
+
 
 }
 
@@ -183,16 +189,20 @@ a {
 @media (max-width: 768px) {
 
   #welcome-msg {
-    height: 40vh;
+    height: 43vh;
   }
 
   .welcome-msg-text {
-    font-size: 6.6em;
+    font-size: 5.9em;
   } 
 
 
   .profile-photo {
     margin: auto;
+  }
+
+  .full-stack {
+    font-size: 1.6em;
   }
 
 }
@@ -213,6 +223,8 @@ a {
   .welcome-msg-text {
     display: inline;
     text-align: center;
+    font-size: 5em;
+    line-height: 80px;
   } 
 
    .profile-photo {
@@ -248,4 +260,19 @@ a {
     padding: 0;
   }
 
+}
+
+@media (max-width: 300px) {
+  /* #welcome-msg {
+
+  } */
+
+  .welcome-msg-text {
+    font-size: 3rem;
+    line-height: 45px;
+  }
+
+  .full-stack {
+    font-size: 1.3em;
+  }
 }
