@@ -4,26 +4,51 @@ import '../App.css';
 import { ThemeProvider } from '@material-ui/styles';
 import '../animations.css'
 import AnimationTest from './AnimationTest';
+import emilyPhoto from '../images/emily-photo.jpeg';
+import { createMuiTheme, useTheme } from '@material-ui/core/styles';
+import useMediaQuery from '@material-ui/core/useMediaQuery';
+import Avatar from '@material-ui/core/Avatar';
 
 
 export default function Header({ theme2 }) {
+
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up('sm'));
+
+
   return (
-    <Container id="welcome-msg" >
+    <>
+      <Container id="welcome-msg" >
+        <Grid
+          container
+          spacing={10}
+        >
+        {/* <Grid
+          item
+          // xs={8} lg={5}
+          container
+          direction="column"
+          justify="center"
+          // alignSelf="end"
+        >
 
-      <Grid
-        container
-        direction="column"
-        // justify="center"
+          <img className="profile-photo" alt="Emily Blair on beach" src={emilyPhoto} />
+        </Grid> */}
+        <Grid
+          item
+          container
+          // display="flex"
+          direction="column"
+          justify="center"
+          xs={6} lg={7}
         // alignItems="center"
-      >
-        <AnimationTest />
-        <ThemeProvider theme={theme2}>
-          {/* <Typography variant="h1" className="bigEntrance"> Hi, I'm Emily.</Typography> */}
-        </ThemeProvider>
-      
-      </Grid>
-        <Typography variant="h5"> A full stack software engineer.</Typography>
+        >
+          <AnimationTest />
 
-    </Container>
+          <div style={{ fontSize: "2em" }}>A <span className="full-stack">full stack </span>software engineer.</div>
+        </Grid>
+        </Grid>
+      </Container>
+    </>
   )
 }

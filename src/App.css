@@ -1,4 +1,4 @@
-p,h1,h2,h3,h4,h5,h6,a {
+p,h1,h2,h3,h4,h5,h6,a,img {
   color: #37474f;
 }
 
@@ -11,21 +11,11 @@ html {
 body {
   background: #cfd8dc;
   font-family: 'Inconsolata', monospace;
-  /* font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, ubuntu, roboto, noto,
-  segoe ui, arial, sans-serif; */
-/* background: transparent;
--webkit-touch-callout: none;
--webkit-user-select: none;
--khtml-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-cursor: default; */
 }
 
 #welcome-msg {
   width: 80vw;
-  height: 35vh;
+  height: 50vh;
   /* border: 2px solid #283593;   */
   /* border: 2px solid #3949ab;   */
   background: #D8B4A0;
@@ -35,7 +25,8 @@ cursor: default; */
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   display: flex;
-  justify-content: center;
+  /* justify-content: start; */
+  flex-direction: row;
   margin: 3em 0em;
 }
 
@@ -46,14 +37,33 @@ cursor: default; */
   color: white;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  font-size: 5em;
-  font-weight: 700;
+  align-items: flex-start;
+  font-size: 8em;
+  font-weight: 600;
   text-transform: uppercase;
   will-change: transform, opacity, height;
   white-space: nowrap;
   cursor: pointer;
   line-height: 100px;
+}
+
+.full-stack {
+  font-size: 4rem;
+  text-align: center;
+  /* height:90vh;
+  line-height: 90vh; */
+  color: #fcedd8;
+   font-family: 'Arial';
+  font-weight: 700;
+  text-shadow: 2px 2px 0px #303f9f, 
+              4px 6px 0px #001970, 
+              8px 9px 0px #37474f, 
+              10px 12px 0px #017e7f, 
+              15px 15px 0px #052939, 
+              18px 18px 0px #D8B4A0, 
+              21px 21px 0px #D8B4A0, 
+              40px 40px 0px #D8B4A0, 
+              45px 45px 0px #D8B4A0;
 }
 
 
@@ -85,6 +95,7 @@ cursor: default; */
 
 .hobbie-icons {
   margin: .3em;
+  color: #37474f;
 }
 
 #animatedElement {
@@ -99,8 +110,6 @@ cursor: default; */
 
 /* Changing color of progress bar */
 .progress-bar {
-  fill: red !important;
-  background-color: #5c6bc0 !important;
   height: .5em !important;
   border-radius: .5em !important;
 }
@@ -148,7 +157,8 @@ a {
 @media (max-width: 500px) {
   #welcome-msg {
     width: 90vw;
-    height: 45vh;
+    height: 50vh;
+    flex-direction: column;
   }
 
   #welcome-msg-text {
@@ -160,8 +170,19 @@ a {
 
    .profile-photo {
     margin: auto;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; */
+    height: 20vh;
+
+  }
+
+  .transitions-item {
+    font-size: 4em;
+  }
+
+  .full-stack {
+    font-size: 1.8em;
+
   }
 }
