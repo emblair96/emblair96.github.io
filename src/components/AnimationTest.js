@@ -13,12 +13,6 @@ export default function AnimationTest() {
   var line = 100
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up("sm"));
-  const responsive = matches 
-                    ? line = 100
-                    : line = 40
-
-
-
 
   const ref = useRef([])
   const [items, set] = useState([])
@@ -48,13 +42,41 @@ export default function AnimationTest() {
 
   useEffect(() => void reset(), [])
 
+  // var responsive;
+
+  // if (useMediaQuery(theme.breakpoints.down("sm"))) {
+  //   responsive = <h1 style={{fontSize: "6em", lineHeight: "80px", textTransform: "uppercase", display: "inline"}} className="welcome-msg-text">Emily Blair</h1>
+  // } else if (useMediaQuery(theme.breakpoints.down("md"))) {
+  //   responsive = <div>
+  //   {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
+  //     <animated.div className="transitions-item" key={key} style={rest}>
+  //       <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+  //     </animated.div>
+  //   ))}
+  // </div>
+  // } else {
+  //     {line === "80px"}
+  // }
+
+  const responsive = 
+  matches 
+  ? <div>
+  {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
+    <animated.div className="transitions-item welcome-msg-text" key={key} style={rest}>
+      <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
+    </animated.div>
+  ))}
+</div>
+  : <h1 style={{fontSize: "6em", lineHeight: "80px", textTransform: "uppercase", display: "inline"}} className="welcome-msg-text">Emily Blair</h1>
+
   return (
     <div>
-      {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
+      {responsive}
+      {/* {transitions.map(({ item, props: { innerHeight, ...rest }, key }) => (
         <animated.div className="transitions-item" key={key} style={rest}>
           <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
         </animated.div>
-      ))}
+      ))} */}
     </div>
   )
 }

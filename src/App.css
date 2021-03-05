@@ -25,13 +25,12 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
   display: flex;
-  /* justify-content: start; */
+  align-self: center;
   flex-direction: row;
   margin: 3em 0em;
 }
 
 .transitions-item {
-  
   overflow: hidden;
   width: 100%;
   color: white;
@@ -43,7 +42,6 @@ body {
   text-transform: uppercase;
   will-change: transform, opacity, height;
   white-space: nowrap;
-  cursor: pointer;
   line-height: 100px;
 }
 
@@ -90,11 +88,10 @@ body {
 .profile-photo {
   height: 30vh;
   border-radius: .5em;
-  margin-right: auto;
 }
 
 .hobbie-icons {
-  margin: .3em;
+  margin: 0.3em;
   color: #37474f;
 }
 
@@ -129,20 +126,21 @@ body {
   align-items: center;
   padding: 0em 1em 3em 1em;
   font-family: 'Poppins', sans-serif;
- 
+}
 
+.contact-fields { 
+  display: flex; 
+  justify-content: center; 
+  flex-direction: row;
 }
 
 a {
   text-decoration: none;
+  padding: .8em;
 }
 
 .footer {
   padding: 4em;
-}
-
-a {
-  padding: .8em;
 }
 
 @media(hover: hover) and
@@ -153,36 +151,76 @@ a {
     }
 }
 
+@media (max-width: 1024px) {
+
+  #welcome-msg {
+    height: 35vh;
+  }
+
+  .welcome-msg-text {
+    font-size: 6.6em;
+  } 
+  
+}
+
+@media (max-width: 1024px) {
+
+  #welcome-msg {
+    height: 35vh;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  #welcome-msg {
+    height: 40vh;
+  }
+
+  .welcome-msg-text {
+    font-size: 6.6em;
+  } 
+
+  .profile-photo {
+    margin: auto;
+  }
+
+}
 
 @media (max-width: 500px) {
   #welcome-msg {
     width: 90vw;
-    height: 50vh;
-    flex-direction: column;
-  }
-
-  #welcome-msg-text {
-    margin-bottom: 25px;
-    display: flex;
+    height: 45vh;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .welcome-msg-text {
+    display: inline;
+
   } 
 
    .profile-photo {
     margin: auto;
     /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    height: 20vh;
+    flex-direction: column;*/
+    align-content: center; 
+    height: 30vh;
 
   }
 
   .transitions-item {
-    font-size: 4em;
+    font-size: 3.8em;
   }
 
   .full-stack {
-    font-size: 1.8em;
+    font-size: 1.7em;
 
   }
+
+
 }

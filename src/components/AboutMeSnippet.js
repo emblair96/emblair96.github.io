@@ -7,7 +7,7 @@ export default function AboutMeSnippet({theme, title, text}) {
   return (
     <ThemeProvider theme={theme}>
       <Typography variant="h5">{title}</Typography>
-      <p style={{fontSize: "1.3em"}}>{text}</p>
+      <p style={{fontSize: "1.2em"}}>{text}</p>
     </ThemeProvider>
       
   )

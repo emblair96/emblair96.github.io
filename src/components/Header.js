@@ -1,27 +1,21 @@
 import { Grid, Container } from '@material-ui/core';
-import Typography from '@material-ui/core/Typography';
 import '../App.css';
-import { ThemeProvider } from '@material-ui/styles';
 import '../animations.css'
 import AnimationTest from './AnimationTest';
-import emilyPhoto from '../images/emily-photo.jpeg';
-import { createMuiTheme, useTheme } from '@material-ui/core/styles';
+import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
-import Avatar from '@material-ui/core/Avatar';
-
 
 export default function Header({ theme2 }) {
 
   const theme = useTheme();
   const matches = useMediaQuery(theme.breakpoints.up('sm'));
 
-
   return (
     <>
       <Container id="welcome-msg" >
         <Grid
           container
-          spacing={10}
+          // spacing={0}
         >
         {/* <Grid
           item
@@ -40,7 +34,7 @@ export default function Header({ theme2 }) {
           // display="flex"
           direction="column"
           justify="center"
-          xs={6} lg={7}
+          xs={12} lg={7}
         // alignItems="center"
         >
           <AnimationTest />

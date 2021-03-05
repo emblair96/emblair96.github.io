@@ -34,7 +34,7 @@ export default function Contact({ theme2 }) {
           {/* <Icon component={SmartphoneIcon} /> */}
           </div>
         </Grid>
-        <Form />
+        <Form/>
      
       </Container>
 

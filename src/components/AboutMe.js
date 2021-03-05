@@ -1,10 +1,8 @@
 import React from 'react'
 import { Grid, Container } from '@material-ui/core';
 import AboutMeSnippet from './AboutMeSnippet';
-import '../App.css';
-import Icon from '@material-ui/core/Icon';
 import Hobbies from './Hobbies'
-
+import '../App.css';
 import emilyPhoto from '../images/emily-photo.jpeg';
 
 export default function AboutMe({ theme }) {
