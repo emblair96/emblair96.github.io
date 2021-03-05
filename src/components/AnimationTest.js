@@ -1,12 +1,7 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
-
 import '../App.css';
-import {
-  createMuiTheme,
-  ThemeProvider,
-  useTheme
-} from "@material-ui/core/styles";
+import { useTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 export default function AnimationTest() {

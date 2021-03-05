@@ -2,13 +2,8 @@ import { Grid, Container } from '@material-ui/core';
 import '../App.css';
 import '../animations.css'
 import AnimationTest from './AnimationTest';
-import { useTheme } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-export default function Header({ theme2 }) {
-
-  const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up('sm'));
+export default function Header() {
 
   return (
     <>
