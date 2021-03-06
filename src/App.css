@@ -158,7 +158,7 @@ a {
 
 @media (max-width: 1290px) {
   #welcome-msg {
-    height: 100vh;
+    height: 88vh;
   }
 
   .welcome-msg-text {
@@ -169,13 +169,17 @@ a {
   .full-stack {
     font-size: 1em;
   }
+
+  .profile-photo {
+    height: 30vw;
+  }
 }
 
 
 @media (max-width: 1024px) {
 
   #welcome-msg {
-    height: 45vh;
+    height: 42vh;
   }
 
 
@@ -187,11 +191,14 @@ a {
     font-size: 1.5em;
   }
 
+  .profile-photo {
+    height: 30vh;
+  }
+
 
 }
-
-
-@media (max-width: 768px) {
+/* 
+@media (max-width: 850px) and (min-width: 600px) {
 
   #welcome-msg {
     height: 43vh;
@@ -209,10 +216,31 @@ a {
   .full-stack {
     font-size: 1.6em;
   }
+}
+ */
+
+@media (max-width: 850px) {
+
+  #welcome-msg {
+    height: 48vh;
+  }
+
+  .welcome-msg-text {
+    font-size: 5.9em;
+  } 
+
+
+  .profile-photo {
+    margin: auto;
+  }
+
+  .full-stack {
+    font-size: 1.6em;
+  }
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 540px) {
 
   .navbar-btns {
     margin: 0 auto;

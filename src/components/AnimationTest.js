@@ -1,14 +1,21 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react'
 import { useTransition, animated } from 'react-spring'
 import '../App.css';
-import { useTheme } from "@material-ui/core/styles";
+import { useTheme, createMuiTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 
 export default function AnimationTest() {
+  const responsiveTheme = createMuiTheme({
+    breakpoints: {
+      values: {
+        sm: 813,
+      },
+    },
+  })
+
   var line = 100
   const theme = useTheme();
-  const matches = useMediaQuery(theme.breakpoints.up("sm"));
-  const extraSmall = useMediaQuery(theme.breakpoints.down("xs"));
+  const matches = useMediaQuery(responsiveTheme.breakpoints.up("sm"));
 
   const ref = useRef([])
   const [items, set] = useState([])
