@@ -1,6 +1,5 @@
 import { createMuiTheme } from '@material-ui/core';
 
-
 const theme = createMuiTheme({
 	typography: {
     fontFamily: [
@@ -11,6 +10,7 @@ const theme = createMuiTheme({
     "fontWeightRegular": 400,
     "fontWeightMedium": 500
   },
+  position: 'relative'
 });
 
 const theme2 = createMuiTheme({
@@ -22,7 +22,7 @@ const theme2 = createMuiTheme({
 		"fontWeightLight": 300,
     "fontWeightRegular": 400,
     "fontWeightMedium": 500
-  },
+  }
 });
 
 export {theme, theme2}

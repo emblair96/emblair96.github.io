@@ -4,8 +4,19 @@ import useScrollTrigger from '@material-ui/core/useScrollTrigger';
 import { AppBar, Button, Container, Grid, Toolbar } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import {Link} from 'react-scroll';
+import { createMuiTheme } from '@material-ui/core';
 
 function ElevationScroll(props) {
+
+  const theme = createMuiTheme({
+    props: {
+      // Name of the component ⚛️
+      AppBar: {
+        // The default props to change
+        disableFixeds: true, // No more ripple, on the whole application 💣!
+      },
+    },
+  });
   const { children } = props;
 
   const trigger = useScrollTrigger({
@@ -19,22 +30,22 @@ function ElevationScroll(props) {
 }
 
 
-export default function Navbar(props, ref) {
+export default function Navbar(props) {
 
   return (
-    <ThemeProvider theme={props.theme}>
+    <ThemeProvider>
       <React.Fragment>
         <CssBaseline />
         <ElevationScroll {...props}>
           <AppBar style={{ backgroundColor: "#cfd8dc" }}>
-            <Container >
+            <Container classes={{label: 'MuiAppBar-positionRelative'}}>
 
               <Grid
                 container
+                spacing={0}
                 direction="row"
                 justify="flex-end"
                 alignItems="center"
-                
               >
 
                 <Toolbar className="navbar-btns">

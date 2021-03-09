@@ -13,6 +13,11 @@ body {
   font-family: 'Inconsolata', monospace;
 }
 
+.navbar-section {
+  position: relative;
+}
+
+
 #welcome-msg {
   width: 80vw;
   height: 50vh;
@@ -55,14 +60,14 @@ body {
    font-family: 'Arial';
   font-weight: 700;
   text-shadow: 2px 2px 0px #303f9f, 
-              4px 6px 0px #001970, 
-              8px 9px 0px #37474f, 
-              10px 12px 0px #017e7f, 
-              15px 15px 0px #052939, 
+              4px 4px 0px #001970, 
+              8px 8px 0px #37474f, 
+              10px 10px 0px #017e7f, 
+              12px 12px 0px #052939, 
+              14px 14px 0px #D8B4A0, 
               18px 18px 0px #D8B4A0, 
-              21px 21px 0px #D8B4A0, 
-              40px 40px 0px #D8B4A0, 
-              45px 45px 0px #D8B4A0;
+              22px 22px 0px #D8B4A0, 
+              28px 28px 0px #D8B4A0;
 }
 
 
@@ -158,7 +163,7 @@ a {
 
 @media (max-width: 1290px) {
   #welcome-msg {
-    height: 88vh;
+    height: 65vh;
   }
 
   .welcome-msg-text {
@@ -179,12 +184,12 @@ a {
 @media (max-width: 1024px) {
 
   #welcome-msg {
-    height: 42vh;
+    height: 45vh;
   }
 
 
   .welcome-msg-text {
-    font-size: 5.8em;
+    font-size: 6.2em;
   } 
 
   .full-stack {
@@ -192,7 +197,11 @@ a {
   }
 
   .profile-photo {
-    height: 30vh;
+    height: 40vh;
+  }
+
+  .navbar-section {
+    align-content: center;
   }
 
 
@@ -239,6 +248,39 @@ a {
   }
 
 }
+
+@media (max-width: 812px) {
+
+  #welcome-msg {
+    height: 55vh;
+  }
+
+  .welcome-msg-text {
+    font-size: 3.8em;
+  } 
+
+
+  .profile-photo {
+    margin: auto;
+    height: 80vh;
+  }
+
+  .full-stack {
+    font-size: 1.1em;
+  }
+
+}
+
+
+@media (max-width: 780px) and (min-width: 541px) {
+
+  .profile-photo {
+    margin: auto;
+    height: 35vh;
+  }
+
+}
+
 
 @media (max-width: 540px) {
 
