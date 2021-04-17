@@ -19,7 +19,6 @@ const useStyles = makeStyles({
 export default function Project({title, description, img, repoLink, deployedLink}) {
   const classes = useStyles();
   return (
-    // <h1>I'm a project!</h1>
     <div className="card">
     <Card className={classes.root}>
       <CardActionArea>
