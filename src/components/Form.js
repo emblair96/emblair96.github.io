@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, Container, Grid, TextField } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import withWidth, { isWidthDown } from '@material-ui/core/withWidth';
 import '../App.css';
 
 const useStyles = makeStyles((theme) => ({
@@ -12,8 +13,34 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Form() {
+function Form(props) {
   const classes = useStyles();
+
+  let messageField = <div/>;
+
+  if (isWidthDown('sm', props.width)) {
+    messageField = <TextField
+    id="filled-multiline-static"
+    label="Message"
+    multiline
+    rows={4}
+    variant="filled"
+    type="text"
+    name="message"
+    style={{width: "60%"}}
+  />
+  } else {
+    messageField = <TextField
+                id="filled-multiline-static"
+                label="Message"
+                multiline
+                rows={4}
+                variant="filled"
+                type="text"
+                name="message"
+                style={{width: "22%"}}
+              />
+  }
 
   return (
     <Container>
@@ -49,18 +76,10 @@ export default function Form() {
               />
 
             </div>
-            <div style={{ display: "flex", alignItems: "center", flexDirection: "column", width: "150vw" }}>
-
-              <TextField
-                id="filled-multiline-static"
-                label="Message"
-                multiline
-                rows={4}
-                variant="filled"
-                type="text"
-                name="message"
-                style={{width: "40%"}}
-              />
+            <div 
+              style={{ display: "flex", alignItems: "center", flexDirection: "column", width: "150vw" }}
+            >
+              {messageField}
 
             <Button 
               type="submit" 
@@ -77,3 +96,5 @@ export default function Form() {
     </Container>
   );
 }
+
+export default withWidth()(Form);

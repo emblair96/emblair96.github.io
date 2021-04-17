@@ -5,6 +5,7 @@ import { AppBar, Button, Container, Grid, Toolbar } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/styles';
 import {Link} from 'react-scroll';
 import { createMuiTheme } from '@material-ui/core';
+import Navbar from 'react-bootstrap/Navbar';
 
 function ElevationScroll(props) {
 
@@ -30,7 +31,7 @@ function ElevationScroll(props) {
 }
 
 
-export default function Navbar(props) {
+export default function AppNavbar(props) {
 
   return (
     <ThemeProvider>
