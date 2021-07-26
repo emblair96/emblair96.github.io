@@ -9,7 +9,6 @@
 * [Google Fonts](https://fonts.google.com/)
 
 ## What you'll find when you visit my website
-* What brought me to software development
 * My level of familiarity with vairous programming languages
 * Example projects I've worked on
 * How to connect with me
@@ -19,7 +18,7 @@
 * [GitHub Repository](https://github.com/emblair96/emblair96.github.io)
 
 ## Credits
-* [Animate on on scroll library](https://michalsnik.github.io/aos/)
+* [Animate on scroll library](https://michalsnik.github.io/aos/)
 * [react-scroll npm](https://www.npmjs.com/package/react-scroll)
 * [react-router-hash-link npm](https://www.npmjs.com/package/react-router-hash-link)
 * [Codepen shadow effect](https://codepen.io/creatz/pen/pooBeev)
