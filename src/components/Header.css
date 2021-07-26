@@ -1,0 +1,23 @@
+div {
+  padding-top: 1em;
+}
+
+h1 {
+  font-size: 10em;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1em;
+  margin-bottom: 0em;
+	letter-spacing:0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: #3F51B5;
+  text-shadow: 
+		5px 5px #EF9313;
+}
+
+@media (max-width: 512px) {
+  h1 {
+    font-size: 6.5em;
+  }
+} 

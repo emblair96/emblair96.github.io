@@ -1,43 +1,69 @@
-import { Container, Grid } from '@material-ui/core';
-// import LocationOnIcon from '@material-ui/icons/LocationOn';
-// import EmailIcon from '@material-ui/icons/Email';
-// import SmartphoneIcon from '@material-ui/icons/Smartphone';
-import { ThemeProvider } from '@material-ui/styles';
-import Form from './Form';
-import '../App.css';
+import React from "react";
+import { Button, Container, Grid, TextField } from '@material-ui/core';
+import './Contact.css';
 
+export default function Contact() {
 
-export default function Contact({ theme2 }) {
   return (
-    <ThemeProvider theme={theme2}>
-      
-      <Container
-        className="contact-section"
-
+    <Container>
+      <Grid
+        container
+        align="center"
+        justify="center"
+        data-aos="fade-left"
       >
+        <p>Denver, CO</p>
+        <p><a href="mailto:emilyblair96@gmail.com" style={{ textDecoration: "none", color: "#37474F" }}>emilyblair96@gmail.com</a></p>
+        <p>636.288.8821</p>
+      </Grid>
+      <form noValidate autoComplete="off" action="https://getform.io/f/307f232d-a51b-4229-9ac7-526019627510" method="POST">
         <Grid
+          align="center"
           justify="center"
-          className="contact-section"
         >
-          <div className="contact-options">
-            <p>Chicago, IL</p>
-            {/* <Icon component={LocationOnIcon} /> */}
-          </div>
-          <div className="contact-options">
-            
-            <p><a href="mailto:emilyblair96@gmail.com">emilyblair96@gmail.com</a></p>
-            
-            {/* <Icon component={EmailIcon} /> */}
-          </div>
-          <div className="contact-options">
-          <p>636.288.8821</p>
-          {/* <Icon component={SmartphoneIcon} /> */}
-          </div>
+          <TextField
+            id="filled-basic"
+            label="Name"
+            variant="filled"
+            type="text"
+            name="name"
+            style={{ margin: ".2em" }}
+          />
+          <TextField
+            id="filled-basic"
+            label="Email"
+            variant="filled"
+            type="email"
+            name="email"
+            style={{ margin: ".2em" }}
+          />
         </Grid>
-        <Form/>
-     
-      </Container>
-
-    </ThemeProvider>
+        <Grid
+          align="center"
+        >
+          <TextField
+            id="filled-multiline-static"
+            label="Message"
+            multiline
+            rows={4}
+            variant="filled"
+            type="text"
+            name="message"
+            style={{ width: "60%" }}
+          />
+        </Grid>
+        <Grid
+          align="center"
+        >
+          <Button
+            type="submit"
+            variant="contained"
+            style={{ marginTop: "1em" }}
+          >
+            Connect with Emily
+          </Button>
+        </Grid>
+      </form>
+    </Container>
   )
-}
+};
