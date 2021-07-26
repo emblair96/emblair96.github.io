@@ -1,0 +1,16 @@
+h2 {
+  font-size: 3em;
+  color: #37474F;
+  font-weight: 600;
+  text-align: center;
+  margin-top: .3em;
+  margin-bottom: 0em;
+  text-shadow: 2px 2px 4px #37474F;  
+  letter-spacing: .7em;
+}
+
+@media (max-width: 512px) {
+  h2 {
+    font-size: 2em;
+  }
+}

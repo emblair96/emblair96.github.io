@@ -1,78 +1,39 @@
-import React from 'react';
-import CssBaseline from '@material-ui/core/CssBaseline';
-import useScrollTrigger from '@material-ui/core/useScrollTrigger';
-import { AppBar, Button, Container, Grid, Toolbar } from '@material-ui/core';
-import { ThemeProvider } from '@material-ui/styles';
-import {Link} from 'react-scroll';
-import { createMuiTheme } from '@material-ui/core';
-import Navbar from 'react-bootstrap/Navbar';
+import { useTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import React, { useEffect, useState, refs, useRef } from 'react';
+import NavbarRegular from './NavbarRegular';
+import NavbarBurger from './NavbarBurger';
+import './Navbar.css';
 
-function ElevationScroll(props) {
+export default function PortfolioNavbar() {
 
-  const theme = createMuiTheme({
-    props: {
-      // Name of the component ⚛️
-      AppBar: {
-        // The default props to change
-        disableFixeds: true, // No more ripple, on the whole application 💣!
-      },
-    },
-  });
-  const { children } = props;
+  const theme = useTheme();
+  const matches = useMediaQuery(theme.breakpoints.up('md'));
 
-  const trigger = useScrollTrigger({
-    disableHysteresis: true,
-    threshold: 0
-  });
+  // react-scroll npm to simplify navbar scrolling to point on page
+  const [selected, setSelected] = useState();
+  const selectedBtn = useRef(null);
 
-  return React.cloneElement(children, {
-    elevation: trigger ? 4 : 0,
-  });
-}
+  // const handleBtnClick = (href) => {
+  //   setSelected(href)
+  //   refs.selected.scrollIntoView()
+  // };
 
+  // useEffect(() => {
+  //   if (selected && selectedBtn.current) {
+  //     selectedBtn.current.scrollIntoView();
+  //     setSelected(false);
+  //   }
+  // }, [selected, selectedBtn.current]);
 
-export default function AppNavbar(props) {
-
+  // Change to burger menu view on medium devices and below
+  const responsiveNav =
+    matches
+      ? <NavbarRegular />
+      : <NavbarBurger />
   return (
-    <ThemeProvider>
-      <React.Fragment>
-        <CssBaseline />
-        <ElevationScroll {...props}>
-          <AppBar style={{ backgroundColor: "#cfd8dc" }}>
-            <Container classes={{label: 'MuiAppBar-positionRelative'}}>
-
-              <Grid
-                container
-                spacing={0}
-                direction="row"
-                justify="flex-end"
-                alignItems="center"
-              >
-
-                <Toolbar className="navbar-btns">
-                  
-                  <Link to="home">
-                    <Button className="btn" style={{ margin: ".3em", fontSize: "1.2em" }} variant="outlined" to="#home"> 
-                      Home
-                    </Button>
-                  </Link>
-                  <Link to="projects">
-                    <Button style={{ margin: ".3em", fontSize: "1.2em" }} variant="outlined" href="#projects">
-                      Projects
-                    </Button>
-                  </Link>
-                  <Link to="contact">
-                    <Button style={{ margin: ".3em", fontSize: "1.2em" }} variant="outlined" href="#contact">
-                      Contact
-                    </Button>
-                  </Link>
-                </Toolbar>
-              </Grid>
-            </Container>
-          </AppBar>
-        </ElevationScroll>
-        <Toolbar />
-      </React.Fragment>
-    </ThemeProvider>
-  );
-}
+    <>
+      {responsiveNav}
+    </>
+  )
+};
