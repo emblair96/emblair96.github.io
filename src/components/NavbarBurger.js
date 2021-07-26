@@ -95,7 +95,7 @@ export default function SwipeableTemporaryDrawer(props) {
       {/* <React.Fragment> */}
       <CssBaseline />
       {/* <ElevationScroll {...props}> */}
-      <AppBar style={{ backgroundColor: "#cfd8dc", boxShadow: "0px 0px 5px grey", height: '90px' }}>
+      <AppBar style={{ backgroundColor: "#cfd8dc", boxShadow: "0px 0px 5px grey", height: '100px' }}>
         <Container classes={{ label: "MuiAppBar-positionRelative" }}>
           <Grid
             container
